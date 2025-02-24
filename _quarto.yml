@@ -1,12 +1,20 @@
 project:
   type: book
-
+  output-dir: docs
+  
 book:
   title: "CASA23_learning_diary"
-  author: "Norah Jones"
-  date: "2025/2/24"
+  author: "Yifan Feng"
+  date: "2025/1/16"
   chapters:
     - index.qmd
+    - wk1.qmd
+    - wk2.qmd
+    - wk3.qmd
+    - wk4.qmd
+    - wk6.qmd
+    
+    
     - intro.qmd
     - summary.qmd
     - references.qmd

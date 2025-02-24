@@ -1,0 +1,16 @@
+---
+title: "Xaringen and Quarto"
+---
+
+This week's assignment was to create a Xaringan presentation in which I demonstrated the features and applications of Landsat 8. We used Quarto to create web pages.
+
+## View the Presentation
+
+```{r, echo=FALSE,warning=FALSE, message=FALSE}
+
+xaringanExtra::embed_xaringan(
+  url = "https://evanfeng11.github.io/23Xaringan/xaringan_presentation.html",
+  ratio = "16:9"
+)
+
+```
