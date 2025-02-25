@@ -1,4 +1,8 @@
-# HELLO {.unnumbered}
+---
+title: "CASA23 Learning Diary"
+---
+
+# HELLO
 
 This is a Yifan's Quarto book.
 
