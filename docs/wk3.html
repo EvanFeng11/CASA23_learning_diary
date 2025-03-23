@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>3&nbsp; wk3 – CASA23_learning_diary</title>
+<title>4&nbsp; Remote Sensing Data and Correction – CASA23_learning_diary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -69,6 +69,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -81,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wk3.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">wk3</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wk3.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote Sensing Data and Correction</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -109,49 +138,67 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">HELLO</span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">CASA23 Learning Diary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk1.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing Cities and Environments</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction to Remote Sensing Cities and Environments</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk2.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Xaringen and Quarto</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Xaringen and Quarto</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk3.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">wk3</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote Sensing Data and Correction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">wk4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">wk4</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wk7.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wk8.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./wk9.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -165,15 +212,24 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">4.1</span> Summary</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">4.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">4.3</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">4.4</span> References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">wk3</span></h1>
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Remote Sensing Data and Correction</span></h1>
 </div>
 
 
@@ -190,8 +246,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="summary" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">4.1</span> Summary</h2>
+<p>This week’s content focused on atmospheric correction techniques and image enhancement methods for remote sensing data. Atmospheric correction is a critical preprocessing step that removes atmospheric effects from satellite imagery, improving data accuracy by converting raw digital numbers (DN) to reflectance values . We explored several correction methods, including Dark Object Subtraction (DOS), which assumes the darkest pixels should have zero reflectance and attributes their values to atmospheric effects. The mathematical formulation for DOS follows: <span class="math inline">\(\rho_{\lambda}= \frac{(Lsat_{rad} - Lhaze1percent_{rad})\pi * d^2}{EO_{\lambda} * cos\theta S * TUAv + TAUz}\)</span> . For relatively clear Landsat scenes, we can convert radiance to reflectance using: <span class="math inline">\(\rho_{\rho}= \frac{\pi* L_{\lambda} * d ^2}{ESUN_{\lambda} * cos\theta_S}\)</span>. In R, these corrections can be implemented using the radCor function from the RStoolbox package.</p>
+<p>Additionally, we learned various image enhancement techniques to improve interpretability. These include ratio transformations for highlighting specific features (like NDVI for vegetation), filtering methods (low-pass, high-pass, and median) for noise reduction and edge enhancement, texture analysis using Gray Level Co-occurrence Matrix (GLCM) to extract spatial structural information, data fusion combining multiple sensor data, and Principal Component Analysis (PCA) for dimensionality reduction and removal of redundant information . Each technique serves different purposes in remote sensing analysis, and their appropriate application depends on research objectives and data characteristics.</p>
+</section>
+<section id="applications" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">4.2</span> Applications</h2>
+<p>Atmospheric correction techniques have been widely applied in urban environmental monitoring studies. Wang et al.&nbsp;(2024) evaluated five atmospheric correction algorithms for satellite imagery, finding that different methods perform optimally under varying atmospheric conditions . Their research demonstrated that proper atmospheric correction significantly improves the accuracy of land cover classification in urban areas, with overall accuracy increasing by up to 15%. Similarly, Zhu et al.&nbsp;(2023) investigated the effects of atmospheric correction on vegetation indices in urban settings, concluding that uncorrected imagery can lead to substantial underestimation of vegetation coverage, particularly in areas with high aerosol concentrations .</p>
+<p>Image enhancement techniques have proven valuable in diverse remote sensing applications. Chen et al.&nbsp;(2012) employed texture analysis and PCA to improve urban feature extraction, achieving 87% accuracy in distinguishing between different building types in high-density urban environments . Their approach demonstrated how texture measures can complement spectral information when analyzing complex urban landscapes. In ecological applications, Schulte to Bühne and Pettorelli (2018) explored the integration of multispectral and radar satellite imagery for biodiversity monitoring, showing how data fusion techniques can overcome the limitations of individual sensors and provide more comprehensive information about habitat structure and condition . Their research highlighted that combining optical and radar data improved the detection of subtle changes in vegetation structure that would be missed by either sensor alone, offering valuable insights for conservation planning in rapidly changing environments.</p>
+</section>
+<section id="reflection" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">4.3</span> Reflection</h2>
+<p>The techniques learned this week represent fundamental tools in the remote sensing analyst’s toolkit, each with specific strengths and limitations. Atmospheric correction, while essential for quantitative analysis, requires careful consideration of atmospheric conditions and sensor characteristics. I found the mathematical foundations particularly challenging but appreciated their importance for ensuring data integrity. The various image enhancement methods offer exciting possibilities for extracting meaningful information from satellite imagery, but their effective application requires a nuanced understanding of both the techniques themselves and the phenomena being studied.</p>
+<p>What I found most interesting was how these seemingly technical procedures connect directly to real-world applications in urban planning, environmental monitoring, and conservation. The ability to accurately measure vegetation health in cities or detect subtle changes in forest structure has profound implications for addressing pressing environmental challenges. Looking forward, I believe these skills will be valuable in my future work, particularly the combination of spectral and textural analysis for complex landscape characterization. However, I recognize that remote sensing is just one tool among many, and its integration with field data and local knowledge is essential for developing holistic understanding of environmental systems. As remote sensing technology continues to advance, maintaining a critical perspective on its capabilities and limitations will be crucial for responsible application.</p>
+</section>
+<section id="references" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="references"><span class="header-section-number">4.4</span> References</h2>
+<ol type="1">
+<li><p>Wang, D., et al.&nbsp;(2024). Evaluation of five atmospheric correction algorithms for remote sensing imagery. Science of The Total Environment.</p></li>
+<li><p>Zhu, W., et al.&nbsp;(2023). Effects of Atmospheric Correction on Remote Sensing Imagery Analysis. Remote Sensing, 15(7), 1907.</p></li>
+<li><p>Schulte to Bühne, H., &amp; Pettorelli, N. (2018). Better together: Integrating and fusing multispectral and radar satellite imagery to inform biodiversity monitoring, ecological research and conservation science. Methods in Ecology and Evolution, 9, 849-865.</p></li>
+<li><p>Chen, C., et al.&nbsp;(2012). Atmospheric correction of remote sensing imagery based on advanced algorithms. Science China Earth Sciences.</p></li>
+</ol>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -614,12 +694,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./wk2.html" class="pagination-link" aria-label="Xaringen and Quarto">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Xaringen and Quarto</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Xaringen and Quarto</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
       <a href="./wk4.html" class="pagination-link" aria-label="wk4">
-        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">wk4</span></span> <i class="bi bi-arrow-right-short"></i>
+        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">wk4</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
