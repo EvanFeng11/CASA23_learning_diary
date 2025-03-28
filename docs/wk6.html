@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -179,7 +199,6 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary"><span class="header-section-number">6.1</span> Summary</a></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">6.2</span> Applications</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">6.3</span> Reflection</a></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -218,15 +237,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="applications" class="level2" data-number="6.2">
 <h2 data-number="6.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">6.2</span> Applications</h2>
-<p>Google Earth Engine (GEE) has demonstrated remarkable potential in environmental monitoring and disaster management. et al.&nbsp;(2021)Chen<span class="citation" data-cites="chen2021">(<a href="references.html#ref-chen2021" role="doc-biblioref"><strong>chen2021?</strong></a>)</span> developed a GEE-based approach, the Continuous Change Detection and Classification - Spectral Mixture Analysis (CCDC-SMA), to monitor temperate forest degradation. By combining Landsat time series data with reference sample points, their method achieved high-precision monitoring of forest degradation and deforestation in Georgia from 1987 to 2019. Leveraging GEE’s capability to process extensive time series data, the study analyzed thousands of satellite images to construct a continuous record of forest cover changes. This innovative approach not only overcame the limitations of traditional forest monitoring methods but also significantly enhanced the temporal resolution of change detection.</p>
+<p>Google Earth Engine (GEE) has demonstrated remarkable potential in environmental monitoring and disaster management. Chen et al.&nbsp;(2021)<span class="citation" data-cites="chen2021">(<a href="references.html#ref-chen2021" role="doc-biblioref">2021</a>)</span> developed a GEE-based approach, the Continuous Change Detection and Classification - Spectral Mixture Analysis (CCDC-SMA), to monitor temperate forest degradation. By combining Landsat time series data with reference sample points, their method achieved high-precision monitoring of forest degradation and deforestation in Georgia from 1987 to 2019. Leveraging GEE’s capability to process extensive time series data, the study analyzed thousands of satellite images to construct a continuous record of forest cover changes. This innovative approach not only overcame the limitations of traditional forest monitoring methods but also significantly enhanced the temporal resolution of change detection.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="qimages/5.2.jpg" class="img-fluid figure-img"></p>
 <figcaption>Training data and feature selection for land cover classification</figcaption>
 </figure>
 </div>
-<p>In urban and environmental studies, Google Earth Engine (GEE) has been widely applied to land surface temperature (LST) estimation. Ermida et al.&nbsp;(2020)Ermida<span class="citation" data-cites="ermida2020">(<a href="references.html#ref-ermida2020" role="doc-biblioref"><strong>ermida2020?</strong></a>)</span> developed an open-source method using GEE for estimating LST from Landsat series satellite data. Their approach, based on single-channel and split-window algorithms, utilizes thermal infrared bands from Landsat 4-8 to generate LST products. Compared to traditional methods, their GEE implementation significantly improved processing efficiency, enabling researchers to quickly produce LST data for large areas over long time series. This open-source tool provides a valuable resource for applications such as urban heat island effect analysis and environmental monitoring.</p>
-<p>Halder and Bose (2024)Halder and Bose<span class="citation" data-cites="halder2024">(<a href="references.html#ref-halder2024" role="doc-biblioref"><strong>halder2024?</strong></a>)</span> evaluated the application of Google Earth Engine (GEE) in sustainable flood hazard mapping, with a focus on Glacial Lake Outburst Floods (GLOF). They developed a method for automatically extracting flood extents using time series analysis of Sentinel-1 Synthetic Aperture Radar (SAR) data. The approach compares radar backscatter changes before and after flood events, integrating terrain and land cover information to achieve accurate and efficient flood mapping. Leveraging GEE’s parallel computing capabilities, the analysis can be completed within hours after a disaster occurs, providing critical information for emergency response. This method highlights the potential of GEE for rapid and sustainable flood hazard assessments, particularly in the context of climate change and glacial lake dynamics.</p>
+<p>In urban and environmental studies, Google Earth Engine (GEE) has been widely applied to land surface temperature (LST) estimation. Ermida et al.&nbsp;(2020)<span class="citation" data-cites="ermida2020">(<a href="references.html#ref-ermida2020" role="doc-biblioref">2020</a>)</span> developed an open-source method using GEE for estimating LST from Landsat series satellite data. Their approach, based on single-channel and split-window algorithms, utilizes thermal infrared bands from Landsat 4-8 to generate LST products. Compared to traditional methods, their GEE implementation significantly improved processing efficiency, enabling researchers to quickly produce LST data for large areas over long time series. This open-source tool provides a valuable resource for applications such as urban heat island effect analysis and environmental monitoring.</p>
+<p>Halder and Bose (2024)<span class="citation" data-cites="halder2024">(<a href="references.html#ref-halder2024" role="doc-biblioref">2024</a>)</span> evaluated the application of Google Earth Engine (GEE) in sustainable flood hazard mapping, with a focus on Glacial Lake Outburst Floods (GLOF). They developed a method for automatically extracting flood extents using time series analysis of Sentinel-1 Synthetic Aperture Radar (SAR) data. The approach compares radar backscatter changes before and after flood events, integrating terrain and land cover information to achieve accurate and efficient flood mapping. Leveraging GEE’s parallel computing capabilities, the analysis can be completed within hours after a disaster occurs, providing critical information for emergency response. This method highlights the potential of GEE for rapid and sustainable flood hazard assessments, particularly in the context of climate change and glacial lake dynamics.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="qimages/5.3.jpg" class="img-fluid figure-img"></p>
@@ -238,15 +257,19 @@ ul.task-list li input[type="checkbox"] {
 <h2 data-number="6.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">6.3</span> Reflection</h2>
 <p>Learning Google Earth Engine has profoundly shown me the immense potential of Earth observation technologies in addressing environmental and urban challenges. As someone who has previously worked on mine land rehabilitation projects, I immediately recognized GEE’s value in this field. Traditional mine area monitoring methods often rely on limited field sampling and intermittent aerial photography, making it difficult to comprehensively capture the dynamic process of mine recovery. GEE’s long time series satellite data and powerful analytical capabilities can help us continuously monitor vegetation recovery, soil erosion changes, and hydrological condition improvements in mining areas, providing more comprehensive evidence for restoration effect assessment.</p>
 <p>Specifically, GEE’s PCA capabilities allow for the identification of subtle recovery patterns across mine sites by reducing data dimensionality, enabling more efficient analysis of temporal changes without the computational burden of processing terabytes of raw satellite imagery. However, I also realize that integrating GEE into actual land restoration policies still faces challenges, such as local governments’ acceptance of new technologies, technical personnel training requirements, and how to translate remote sensing results into specific restoration measures. Nevertheless, I believe that as GEE’s user interface continues to improve and more success cases emerge, these barriers will gradually diminish. For me, mastering GEE has not only expanded my technical toolkit but also opened up new possibilities for participating in larger-scale, more systematic environmental restoration projects in the future.</p>
-</section>
-<section id="references" class="level2" data-number="6.4">
-<h2 data-number="6.4" class="anchored" data-anchor-id="references"><span class="header-section-number">6.4</span> References</h2>
-<p>Chen, S. et al.&nbsp;(2021) Monitoring temperate forest degradation on Google Earth Engine using Landsat time series analysis. Remote sensing of environment. [Online] 265112648-.</p>
-<p>Ermida, S. L. et al.&nbsp;(2020) Google earth engine open-source code for land surface temperature estimation from the landsat series. Remote sensing (Basel, Switzerland). [Online] 12 (9), 1471-.</p>
-<p>Subhra Halder &amp; Suddhasil Bose (2024) Sustainable flood hazard mapping with GLOF: A Google Earth Engine approach. Natural hazards research. [Online] 4 (4), 573–578.</p>
-<p>Gorelick, N. et al.&nbsp;(2017) Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote sensing of environment. [Online] 20218–27.</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-chen2021" class="csl-entry" role="listitem">
+Chen, Shijuan, Curtis E. Woodcock, Eric L. Bullock, Paulo Arévalo, Paata Torchinava, Siqi Peng, and Pontus Olofsson. 2021. <span>“Monitoring temperate forest degradation on Google Earth Engine using Landsat time series analysis.”</span> <em>Remote sensing of environment</em> 265: 112648–48. <a href="https://doi.org/10.1016/j.rse.2021.112648">https://doi.org/10.1016/j.rse.2021.112648</a>.
+</div>
+<div id="ref-ermida2020" class="csl-entry" role="listitem">
+Ermida, Sofia L., Patrícia Soares, Vasco Mantas, Frank-M. Göttsche, and Isabel F. Trigo. 2020. <span>“Google Earth Engine Open-Source Code for Land Surface Temperature Estimation from the Landsat Series.”</span> <em>Remote sensing (Basel, Switzerland)</em> 12 (9): 1471–71. <a href="https://doi.org/10.3390/rs12091471">https://doi.org/10.3390/rs12091471</a>.
+</div>
+<div id="ref-halder2024" class="csl-entry" role="listitem">
+Halder, Subhra, and Suddhasil Bose. 2024. <span>“Sustainable flood hazard mapping with GLOF: A Google Earth Engine approach.”</span> <em>Natural hazards research</em> 4 (4): 573578. <a href="https://doi.org/10.1016/j.nhres.2024.01.002">https://doi.org/10.1016/j.nhres.2024.01.002</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
