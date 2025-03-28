@@ -7,3 +7,7 @@ title: "CASA23 Learning Diary"
 This is a Yifan's Quarto book.
 
 Welcome to my study diary!
+
+I’m really excited about this module, CASA0023: Remotely Sensing Cities and Environments, because it focuses on practical skills. I think these skills will be super useful for me in the future, whether it’s in research or in a professional role. I’m also looking forward to learning more about how spatial data can be integrated into policies to make cities more sustainable.
+
+Overall, I hope this module will help me build the technical and analytical skills I need to make a real impact in the field of urban sustainability and climate resilience. Plus, I’m excited to create an online portfolio that I can use as a showcase for what I’ve learned!
