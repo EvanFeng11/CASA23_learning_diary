@@ -10,17 +10,17 @@ Additionally, we learned various image enhancement techniques to improve interpr
 
 ## Applications
 
-Atmospheric correction techniques have been widely applied in urban environmental monitoring studies. et al. (2024) Wang[-@wang2024]evaluated the effectiveness of five atmospheric correction (AC) algorithms (Acolite, C2RCC, FLAASH, iCOR, and L2gen) applied to Sentinel-2 Multispectral instrument (MSI) and Sentinel-3 Ocean and Land color instrument images. Their research demonstrated that proper atmospheric correction significantly improves the accuracy of land cover classification in urban areas, with overall accuracy increasing by up to 15%. The choice of correction algorithm can substantially impact the reliability of subsequent analyses, particularly in regions with complex atmospheric conditions such as urban-industrial areas or locations with frequent cloud cover.
+Atmospheric correction techniques have been widely applied in urban environmental monitoring studies. Wang\[-@wang2024\]evaluated the effectiveness of five atmospheric correction (AC) algorithms (Acolite, C2RCC, FLAASH, iCOR, and L2gen) applied to Sentinel-2 Multispectral instrument (MSI) and Sentinel-3 Ocean and Land color instrument images. Their research demonstrated that proper atmospheric correction significantly improves the accuracy of land cover classification in urban areas, with overall accuracy increasing by up to 15%. The choice of correction algorithm can substantially impact the reliability of subsequent analyses, particularly in regions with complex atmospheric conditions such as urban-industrial areas or locations with frequent cloud cover.
 
 ![(a), (b) Average Spectral of MSI and OLCI sensors for five algorithms (400-800 nm); (c), (d) Five AC algorithms for MSI and OLCI with in situ Rrs (λ).](qimages/3MSI%20and%20OLCI%20sensors%20for%20five%20algorithms.jpg)
 
-Image enhancement techniques have proven valuable in diverse remote sensing applications. Chen et al. (2012)Chen[-@chen2012] developed an innovative atmospheric correction approach called ACVSS (Atmospheric Correction based on Vector Space of Spectrum), which improves image quality by first retrieving reflectance images using radiative transfer equations and then constructing a spectrum vector space using infrared bands to correct residual errors in visible bands. Their experiments with Landsat-7 ETM+ imagery demonstrated that this method produced more accurate and visually distinct corrected images compared to popular atmospheric correction software at that time. Their approach highlighted how advanced atmospheric correction techniques can significantly enhance the quality of satellite imagery for subsequent analysis of surface features.
+Image enhancement techniques have proven valuable in diverse remote sensing applications. Chen\[-@chen2012\] developed an innovative atmospheric correction approach called ACVSS (Atmospheric Correction based on Vector Space of Spectrum), which improves image quality by first retrieving reflectance images using radiative transfer equations and then constructing a spectrum vector space using infrared bands to correct residual errors in visible bands. Their experiments with Landsat-7 ETM+ imagery demonstrated that this method produced more accurate and visually distinct corrected images compared to popular atmospheric correction software at that time. Their approach highlighted how advanced atmospheric correction techniques can significantly enhance the quality of satellite imagery for subsequent analysis of surface features.
 
 ![Original image. (a) panoramic image; (b) the flat areas of image; (c) mountain image at band 1. The figures were visualized under ENVI 4.2 software in default image enhancement and true-color composite (R:3, G:2, B:1), where (a) is the zoom out panoramic view by multiplier factor 0.03; (b) and (c) are part of (a) at the full-scale display. The same below.](qimages/3origin.png)
 
 ![The reflectance image based on ACVSS (eq. (14)). (a) panoramic image; (b) the flat areas of image; (c) mountain image at band 1.](qimages/3ACVSS.png)
 
-In ecological applications, Schulte to Bühne and Pettorelli (2018)Schulte to Bühne and Pettorelli[-@schultetobühne2018] explored the integration of multispectral and radar satellite imagery for biodiversity monitoring, showing how data fusion techniques can overcome the limitations of individual sensors and provide more comprehensive information about habitat structure and condition . Their research highlighted that combining optical and radar data improved the detection of subtle changes in vegetation structure that would be missed by either sensor alone, offering valuable insights for conservation planning in rapidly changing environments.
+In ecological applications, Schulte to Bühne and Pettorelli (2018)[@schultetobühne2018] explored the integration of multispectral and radar satellite imagery for biodiversity monitoring, showing how data fusion techniques can overcome the limitations of individual sensors and provide more comprehensive information about habitat structure and condition . Their research highlighted that combining optical and radar data improved the detection of subtle changes in vegetation structure that would be missed by either sensor alone, offering valuable insights for conservation planning in rapidly changing environments.
 
 ![SRS data fusion could support global biodiversity monitoring efforts through SRS-EBVs requires collaboration between remote sensing scientists and biodiversity/ecology scientists](qimages/3ecology.jpg){width="500px" fig-align="center"}
 
@@ -30,11 +30,12 @@ The techniques learned this week represent fundamental tools in the remote sensi
 
 What I found most interesting was how these seemingly technical procedures connect directly to real-world applications in urban planning, environmental monitoring, and conservation. The ability to accurately measure vegetation health in cities or detect subtle changes in forest structure has profound implications for addressing pressing environmental challenges. Looking forward, I believe these skills will be valuable in my future work, particularly the combination of spectral and textural analysis for complex landscape characterization. However, I recognize that remote sensing is just one tool among many, and its integration with field data and local knowledge is essential for developing holistic understanding of environmental systems.
 
-
-
 ## 1
-1.  Wang, D., et al. (2024). Evaluation of five atmospheric correction algorithms for remote sensing imagery. Science of The Total Environment.
 
-2.  Schulte to Bühne, H., & Pettorelli, N. (2018). Better together: Integrating and fusing multispectral and radar satellite imagery to inform biodiversity monitoring, ecological research and conservation science. Methods in Ecology and Evolution, 9, 849-865.
+Wang, D., et al. (2024). Evaluation of five atmospheric correction algorithms for remote sensing imagery. Science of The Total Environment.
 
-3.  Chen, C., et al. (2012). Atmospheric correction of remote sensing imagery based on advanced algorithms. Science China Earth Sciences.
+Schulte to Bühne, H., & Pettorelli, N. (2018). Better together: Integrating and fusing multispectral and radar satellite imagery to inform biodiversity monitoring, ecological research and conservation science. Methods in Ecology and Evolution, 9, 849-865.
+
+Chen, C., et al. (2012). Atmospheric correction of remote sensing imagery based on advanced algorithms. Science China Earth Sciences.
+
+

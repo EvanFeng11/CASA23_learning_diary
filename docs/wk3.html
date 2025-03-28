@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -241,14 +261,14 @@ window.Quarto = {
 </section>
 <section id="applications" class="level2" data-number="4.2">
 <h2 data-number="4.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">4.2</span> Applications</h2>
-<p>Atmospheric correction techniques have been widely applied in urban environmental monitoring studies. et al.&nbsp;(2024) Wang<span class="citation" data-cites="wang2024">(<a href="references.html#ref-wang2024" role="doc-biblioref"><strong>wang2024?</strong></a>)</span>evaluated the effectiveness of five atmospheric correction (AC) algorithms (Acolite, C2RCC, FLAASH, iCOR, and L2gen) applied to Sentinel-2 Multispectral instrument (MSI) and Sentinel-3 Ocean and Land color instrument images. Their research demonstrated that proper atmospheric correction significantly improves the accuracy of land cover classification in urban areas, with overall accuracy increasing by up to 15%. The choice of correction algorithm can substantially impact the reliability of subsequent analyses, particularly in regions with complex atmospheric conditions such as urban-industrial areas or locations with frequent cloud cover.</p>
+<p>Atmospheric correction techniques have been widely applied in urban environmental monitoring studies. et al.&nbsp;(2024) Wang<span class="citation" data-cites="wang2024">(<a href="references.html#ref-wang2024" role="doc-biblioref">2024</a>)</span>evaluated the effectiveness of five atmospheric correction (AC) algorithms (Acolite, C2RCC, FLAASH, iCOR, and L2gen) applied to Sentinel-2 Multispectral instrument (MSI) and Sentinel-3 Ocean and Land color instrument images. Their research demonstrated that proper atmospheric correction significantly improves the accuracy of land cover classification in urban areas, with overall accuracy increasing by up to 15%. The choice of correction algorithm can substantially impact the reliability of subsequent analyses, particularly in regions with complex atmospheric conditions such as urban-industrial areas or locations with frequent cloud cover.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="qimages/3MSI and OLCI sensors for five algorithms.jpg" class="img-fluid figure-img"></p>
 <figcaption>(a), (b) Average Spectral of MSI and OLCI sensors for five algorithms (400-800 nm); (c), (d) Five AC algorithms for MSI and OLCI with in situ Rrs (λ).</figcaption>
 </figure>
 </div>
-<p>Image enhancement techniques have proven valuable in diverse remote sensing applications. Chen et al.&nbsp;(2012)Chen<span class="citation" data-cites="chen2012">(<a href="references.html#ref-chen2012" role="doc-biblioref"><strong>chen2012?</strong></a>)</span> developed an innovative atmospheric correction approach called ACVSS (Atmospheric Correction based on Vector Space of Spectrum), which improves image quality by first retrieving reflectance images using radiative transfer equations and then constructing a spectrum vector space using infrared bands to correct residual errors in visible bands. Their experiments with Landsat-7 ETM+ imagery demonstrated that this method produced more accurate and visually distinct corrected images compared to popular atmospheric correction software at that time. Their approach highlighted how advanced atmospheric correction techniques can significantly enhance the quality of satellite imagery for subsequent analysis of surface features.</p>
+<p>Image enhancement techniques have proven valuable in diverse remote sensing applications. Chen et al.&nbsp;(2012)Chen<span class="citation" data-cites="chen2012">(<a href="references.html#ref-chen2012" role="doc-biblioref">2012</a>)</span> developed an innovative atmospheric correction approach called ACVSS (Atmospheric Correction based on Vector Space of Spectrum), which improves image quality by first retrieving reflectance images using radiative transfer equations and then constructing a spectrum vector space using infrared bands to correct residual errors in visible bands. Their experiments with Landsat-7 ETM+ imagery demonstrated that this method produced more accurate and visually distinct corrected images compared to popular atmospheric correction software at that time. Their approach highlighted how advanced atmospheric correction techniques can significantly enhance the quality of satellite imagery for subsequent analysis of surface features.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="qimages/3origin.png" class="img-fluid figure-img"></p>
@@ -261,7 +281,7 @@ window.Quarto = {
 <figcaption>The reflectance image based on ACVSS (eq. (14)). (a) panoramic image; (b) the flat areas of image; (c) mountain image at band 1.</figcaption>
 </figure>
 </div>
-<p>In ecological applications, Schulte to Bühne and Pettorelli (2018)Schulte to Bühne and Pettorelli<span class="citation" data-cites="schultetobühne2018">(<a href="references.html#ref-schultetobühne2018" role="doc-biblioref"><strong>schultetobühne2018?</strong></a>)</span> explored the integration of multispectral and radar satellite imagery for biodiversity monitoring, showing how data fusion techniques can overcome the limitations of individual sensors and provide more comprehensive information about habitat structure and condition . Their research highlighted that combining optical and radar data improved the detection of subtle changes in vegetation structure that would be missed by either sensor alone, offering valuable insights for conservation planning in rapidly changing environments.</p>
+<p>In ecological applications, Schulte to Bühne and Pettorelli (2018)Schulte to Bühne and Pettorelli<span class="citation" data-cites="schultetobühne2018">(<a href="references.html#ref-schultetobühne2018" role="doc-biblioref">2018</a>)</span> explored the integration of multispectral and radar satellite imagery for biodiversity monitoring, showing how data fusion techniques can overcome the limitations of individual sensors and provide more comprehensive information about habitat structure and condition . Their research highlighted that combining optical and radar data improved the detection of subtle changes in vegetation structure that would be missed by either sensor alone, offering valuable insights for conservation planning in rapidly changing environments.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="qimages/3ecology.jpg" class="img-fluid figure-img" width="500"></p>
@@ -283,6 +303,17 @@ window.Quarto = {
 </ol>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-chen2012" class="csl-entry" role="listitem">
+Chen, Chun, ChengYu Liu, and ShuQing Zhang. 2012. <span>“Atmospheric Correction of Remote Sensing Imagery Based on the Surface Spectrum<span>’</span>s Vector Space.”</span> <em>Science China Earth Sciences</em> 55 (8): 1289–96. <a href="https://doi.org/10.1007/s11430-012-4413-4">https://doi.org/10.1007/s11430-012-4413-4</a>.
+</div>
+<div id="ref-schultetobühne2018" class="csl-entry" role="listitem">
+Schulte to Bühne, Henrike, and Nathalie Pettorelli. 2018. <span>“Better Together: Integrating and Fusing Multispectral and Radar Satellite Imagery to Inform Biodiversity Monitoring, Ecological Research and Conservation Science.”</span> <em>Methods in Ecology and Evolution</em> 9 (4): 849–65. <a href="https://doi.org/10.1111/2041-210X.12942">https://doi.org/10.1111/2041-210X.12942</a>.
+</div>
+<div id="ref-wang2024" class="csl-entry" role="listitem">
+Wang, Dong, Bo-Hui Tang, and Zhao-Liang Li. 2024. <span>“Evaluation of Five Atmospheric Correction Algorithms for Multispectral Remote Sensing Data over Plateau Lake.”</span> <em>Ecological Informatics</em> 82 (September): 102666. <a href="https://doi.org/10.1016/j.ecoinf.2024.102666">https://doi.org/10.1016/j.ecoinf.2024.102666</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
