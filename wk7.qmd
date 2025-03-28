@@ -1,8 +1,6 @@
 ---
-title: "wk6"
+title: "Classification I"
 ---
-
-# Learning Diary: Week 6 - Classification I
 
 ## Summary
 

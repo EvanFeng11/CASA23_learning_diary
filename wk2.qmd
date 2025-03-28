@@ -14,3 +14,7 @@ xaringanExtra::embed_xaringan(
 )
 
 ```
+
+## Reflection
+
+When I first started using Xaringan and Quarto, it took some time to get used to them. Xaringan, being based on R, can feel a bit complex for those who aren’t familiar with R, but its high level of customization is definitely a highlight. Quarto, on the other hand, is relatively more beginner-friendly with its Markdown-based syntax, but its rich features still require some exploration to fully grasp. Although the initial learning curve felt a bit challenging, I gradually came to appreciate their power, especially the ability to embed code and enable dynamic updates. The process of adapting might take some effort, but the results are absolutely worth it.

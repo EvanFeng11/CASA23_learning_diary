@@ -8,7 +8,7 @@ Phoenix, Arizona faces significant challenges from extreme heat, with the city e
 
 In January 2020, Phoenix became a member of the C40 Cities network, joining 94 global cities committed to leadership in addressing climate change and improving environmental and economic well-being for residents. As part of this commitment, Phoenix developed its 2021 Climate Action Plan (CAP) which establishes a roadmap for reducing greenhouse gas emissions and building climate resilience. The city's membership in C40 has facilitated knowledge exchange with other heat-stressed cities and accelerated adoption of evidence-based cooling strategies (C40 Cities, 2023). Beyond the cool pavement program and tree canopy expansion, Phoenix is implementing several innovative heat mitigation initiatives including: (1) HeatReady certification program that helps neighborhoods prepare for extreme heat events, (2) Cool Corridor program creating shaded pathways to transit stops, and (3) Building Energy Benchmarking ordinance requiring large buildings to track and report energy performance, indirectly addressing urban heat through reduced energy consumption and emissions (City of Phoenix, 2021).
 
-![The 2024 Heat Response Plan for Summer](qimages/2024HeatResponsePlan.png){fig-align="center"}
+![The 2024 Heat Response Plan for Summer](qimages/2024HeatResponsePlan.png){fig-align="center",width="50%"}
 
 
 
