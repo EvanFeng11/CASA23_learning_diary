@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -163,7 +183,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
     </ul>
@@ -207,27 +227,32 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="summary" class="level2" data-number="5.1">
 <h2 data-number="5.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">5.1</span> Summary</h2>
-<p>Phoenix, Arizona faces significant challenges from extreme heat, with the city experiencing an average of 110 days annually above 100°F (37.8°C). In response, Phoenix established the nation’s first municipal <strong>Heat Response and Mitigation Office (HRMO)</strong> in 2021, demonstrating pioneering leadership in urban climate adaptation. The city recently released its <strong>2025 Heat Response Plan</strong> which outlines a comprehensive framework for reducing heat-related fatalities, decreasing urban temperatures, and building community resilience through targeted interventions in the built environment (City of Phoenix, 2025). This policy directly aligns with SDG 13 (Climate Action), focusing specifically on target 13.1 to “strengthen resilience and adaptive capacity to climate-related hazards and natural disasters.”</p>
-<p>In January 2020, Phoenix became a member of the C40 Cities network, joining 94 global cities committed to leadership in addressing climate change and improving environmental and economic well-being for residents. As part of this commitment, Phoenix developed its 2021 Climate Action Plan (CAP) which establishes a roadmap for reducing greenhouse gas emissions and building climate resilience. The city’s membership in C40 has facilitated knowledge exchange with other heat-stressed cities and accelerated adoption of evidence-based cooling strategies (C40 Cities, 2023). Beyond the cool pavement program and tree canopy expansion, Phoenix is implementing several innovative heat mitigation initiatives including: (1) HeatReady certification program that helps neighborhoods prepare for extreme heat events, (2) Cool Corridor program creating shaded pathways to transit stops, and (3) Building Energy Benchmarking ordinance requiring large buildings to track and report energy performance, indirectly addressing urban heat through reduced energy consumption and emissions (City of Phoenix, 2021).</p>
-<p><img src="qimages/2024HeatResponsePlan.png" class="img-fluid" alt="The 2024 Heat Response Plan for Summer">{fig-align=“center”,width=“50%”}</p>
+<p>Phoenix, Arizona faces significant challenges from extreme heat, with the city experiencing an average of 110 days annually above 100°F (37.8°C). In response, Phoenix established the nation’s first municipal <strong>Heat Response and Mitigation Office (HRMO)</strong> in 2021, demonstrating pioneering leadership in urban climate adaptation. The city recently released its <strong>2025 Heat Response Plan</strong> which outlines a comprehensive framework for reducing heat-related fatalities, decreasing urban temperatures, and building community resilience through targeted interventions in the built environment (City of Phoenix, 2025)<span class="citation" data-cites="2025HeatResponse">(<a href="references.html#ref-2025HeatResponse" role="doc-biblioref"><span>“2025 <span>Heat Response Plan Presented</span> at <span>City Council Policy Session</span>”</span> n.d.</a>)</span>. This policy directly aligns with SDG 13 (Climate Action), focusing specifically on target 13.1 to “strengthen resilience and adaptive capacity to climate-related hazards and natural disasters.”</p>
+<p>In January 2020, Phoenix became a member of the C40 Cities network, joining 94 global cities committed to leadership in addressing climate change and improving environmental and economic well-being for residents. As part of this commitment, Phoenix developed its 2021 Climate Action Plan (CAP) which establishes a roadmap for reducing greenhouse gas emissions and building climate resilience. The city’s membership in C40 has facilitated knowledge exchange with other heat-stressed cities and accelerated adoption of evidence-based cooling strategies. Beyond the cool pavement program and tree canopy expansion, Phoenix is implementing several innovative heat mitigation initiatives including: (1) HeatReady certification program that helps neighborhoods prepare for extreme heat events, (2) Cool Corridor program creating shaded pathways to transit stops, and (3) Building Energy Benchmarking ordinance requiring large buildings to track and report energy performance, indirectly addressing urban heat through reduced energy consumption and emissions.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="qimages/2024HeatResponsePlan.png" class="img-fluid figure-img" style="width:50.0%"></p>
+<figcaption>The 2024 Heat Response Plan for Summer</figcaption>
+</figure>
+</div>
 </section>
 <section id="applications" class="level2" data-number="5.2">
 <h2 data-number="5.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">5.2</span> Applications</h2>
-<p>Remote sensing technologies offer practical solutions for implementing Phoenix’s heat mitigation strategies through detailed thermal mapping and analysis. For identifying priority intervention areas, Phoenix could apply Connors et al.’s (2013) object-based image analysis methodology that segments QuickBird satellite imagery (0.6m resolution) into distinct urban objects and analyzes their spatial relationships to surface temperature. This approach reveals how specific neighborhood configurations amplify heat, allowing Phoenix to target interventions where modest changes to urban configuration would yield maximum cooling benefits rather than simply addressing the hottest areas.</p>
+<p>Remote sensing technologies offer practical solutions for implementing Phoenix’s heat mitigation strategies through detailed thermal mapping and analysis. For identifying priority intervention areas, Phoenix could apply Connors et al.’s (2013) Connors<span class="citation" data-cites="connors2013">(<a href="references.html#ref-connors2013" role="doc-biblioref"><strong>connors2013?</strong></a>)</span> object-based image analysis methodology that segments QuickBird satellite imagery (0.6m resolution) into distinct urban objects and analyzes their spatial relationships to surface temperature. This approach reveals how specific neighborhood configurations amplify heat, allowing Phoenix to target interventions where modest changes to urban configuration would yield maximum cooling benefits rather than simply addressing the hottest areas.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="qimages/4.2.png" class="img-fluid figure-img"></p>
 <figcaption>Image of LSTs within the study area from ASTER taken at 2235 h LT, June 11 2008</figcaption>
 </figure>
 </div>
-<p>For optimizing the cool pavement program, Phoenix could apply Li et al.’s (2016) spatial regression methodology that quantifies relationships between land surface temperature and urban form. By combining Landsat thermal data with cadastral and socioeconomic information, this approach helps identify how urban configuration influences surface temperature across neighborhoods. Their research found that a 10% increase in impervious surface connectivity can increase land surface temperature by up to 0.9°C, providing Phoenix with specific targets for strategic pavement modification to disrupt heat-amplifying surface networks.</p>
+<p>For optimizing the cool pavement program, Phoenix could apply et al.’s (2016) Li<span class="citation" data-cites="li2016">(<a href="references.html#ref-li2016" role="doc-biblioref"><strong>li2016?</strong></a>)</span>spatial regression methodology that quantifies relationships between land surface temperature and urban form. By combining Landsat thermal data with cadastral and socioeconomic information, this approach helps identify how urban configuration influences surface temperature across neighborhoods. Their research found that a 10% increase in impervious surface connectivity can increase land surface temperature by up to 0.9°C, providing Phoenix with specific targets for strategic pavement modification to disrupt heat-amplifying surface networks.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="qimages/4.3.jpg" class="img-fluid figure-img"></p>
+<p><img src="qimages/4.3.jpg" class="img-fluid figure-img" style="width:80.0%"></p>
 <figcaption>Derived land surface temperatures for the city of Phoenix using Landsat TM and selected census blocks in samples A and B. The points represent the selected census blocks.</figcaption>
 </figure>
 </div>
-<p>For the Cool Corridor program, Phoenix could implement Park et al.’s (2021) approach combining 3D city modeling with thermal remote sensing. Using high-resolution digital surface models from LiDAR, building footprint data, tree canopy information, and thermal imagery, this methodology calculates shadow patterns throughout the day to quantify cooling effects of shade structures. Their findings that tree-shaded surfaces were 4.8°C cooler than unshaded areas provide Phoenix with evidence-based guidelines for optimal placement of shade structures along pedestrian routes to transit stops.</p>
+<p>For the Cool Corridor program, Phoenix could implement Park et al.’s (2021)Park<span class="citation" data-cites="park2021">(<a href="references.html#ref-park2021" role="doc-biblioref"><strong>park2021?</strong></a>)</span> approach combining 3D city modeling with thermal remote sensing. Using high-resolution digital surface models from LiDAR, building footprint data, tree canopy information, and thermal imagery, this methodology calculates shadow patterns throughout the day to quantify cooling effects of shade structures. Their findings that tree-shaded surfaces were 4.8°C cooler than unshaded areas provide Phoenix with evidence-based guidelines for optimal placement of shade structures along pedestrian routes to transit stops.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="qimages/4.4.jpg" class="img-fluid figure-img"></p>
@@ -251,6 +276,11 @@ ul.task-list li input[type="checkbox"] {
 <p>Park, Y., Guldmann, J. M., &amp; Liu, D. (2021). Impacts of tree and building shades on the urban heat island: Combining remote sensing, 3D digital city and spatial regression approaches. Computers, Environment and Urban Systems, 88, 101655. https://doi.org/10.1016/j.compenvurbsys.2021.101655</p>
 
 
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-2025HeatResponse" class="csl-entry" role="listitem">
+<span>“2025 <span>Heat Response Plan Presented</span> at <span>City Council Policy Session</span>.”</span> n.d. Accessed March 27, 2025. <a href="https://www.phoenix.gov/newsroom/heat-news/2025-heat-response-plan-presented-at-city-council-policy-session.html">https://www.phoenix.gov/newsroom/heat-news/2025-heat-response-plan-presented-at-city-council-policy-session.html</a>.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->

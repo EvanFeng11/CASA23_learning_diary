@@ -145,7 +145,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk7.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification I</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -162,20 +162,8 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./summary.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">References</span></span></a>
   </div>
 </li>
     </ul>
@@ -188,9 +176,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#classification-accuracy-assessment" id="toc-classification-accuracy-assessment" class="nav-link active" data-scroll-target="#classification-accuracy-assessment"><span class="header-section-number">8.0.1</span> Classification Accuracy Assessment</a></li>
-  <li><a href="#spatial-autocorrelation-challenges" id="toc-spatial-autocorrelation-challenges" class="nav-link" data-scroll-target="#spatial-autocorrelation-challenges"><span class="header-section-number">8.0.2</span> Spatial Autocorrelation Challenges</a></li>
-  <li><a href="#advanced-classification-methods" id="toc-advanced-classification-methods" class="nav-link" data-scroll-target="#advanced-classification-methods"><span class="header-section-number">8.0.3</span> Advanced Classification Methods</a></li>
+  <li><a href="#introduction-to-classification-units" id="toc-introduction-to-classification-units" class="nav-link active" data-scroll-target="#introduction-to-classification-units"><span class="header-section-number">8.0.1</span> Introduction to Classification Units</a></li>
+  <li><a href="#classification-accuracy-assessment" id="toc-classification-accuracy-assessment" class="nav-link" data-scroll-target="#classification-accuracy-assessment"><span class="header-section-number">8.0.2</span> Classification Accuracy Assessment</a></li>
+  <li><a href="#spatial-autocorrelation-challenges" id="toc-spatial-autocorrelation-challenges" class="nav-link" data-scroll-target="#spatial-autocorrelation-challenges"><span class="header-section-number">8.0.3</span> Spatial Autocorrelation Challenges</a></li>
+  <li><a href="#advanced-classification-methods" id="toc-advanced-classification-methods" class="nav-link" data-scroll-target="#advanced-classification-methods"><span class="header-section-number">8.0.4</span> Advanced Classification Methods</a></li>
   <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">8.1</span> Applications</a></li>
   <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">8.2</span> Reflection</a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8.3</span> References</a></li>
@@ -219,40 +208,44 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>##Summary ### Introduction to Classification Units Remote sensing classification begins with the fundamental question of what constitutes the basic unit of analysis. Four key units are objects, pixels, mixels (mixed pixels), and mixed objects. Each represents a different approach to how we segment and analyze Earth Observation (EO) data. Pixels are the traditional unit, representing fixed grid cells, while objects are homogeneous regions that may contain multiple pixels. Mixels contain multiple land cover types within a single pixel, creating classification challenges, while mixed objects represent regions with heterogeneous characteristics. The choice of unit significantly impacts classification outcomes and accuracy.</p>
-<section id="classification-accuracy-assessment" class="level3" data-number="8.0.1">
-<h3 data-number="8.0.1" class="anchored" data-anchor-id="classification-accuracy-assessment"><span class="header-section-number">8.0.1</span> Classification Accuracy Assessment</h3>
+<p>##Summary</p>
+<section id="introduction-to-classification-units" class="level3" data-number="8.0.1">
+<h3 data-number="8.0.1" class="anchored" data-anchor-id="introduction-to-classification-units"><span class="header-section-number">8.0.1</span> Introduction to Classification Units</h3>
+<p>Remote sensing classification begins with the fundamental question of what constitutes the basic unit of analysis. Four key units are objects, pixels, mixels (mixed pixels), and mixed objects. Each represents a different approach to how we segment and analyze Earth Observation (EO) data. Pixels are the traditional unit, representing fixed grid cells, while objects are homogeneous regions that may contain multiple pixels. Mixels contain multiple land cover types within a single pixel, creating classification challenges, while mixed objects represent regions with heterogeneous characteristics. The choice of unit significantly impacts classification outcomes and accuracy.</p>
+</section>
+<section id="classification-accuracy-assessment" class="level3" data-number="8.0.2">
+<h3 data-number="8.0.2" class="anchored" data-anchor-id="classification-accuracy-assessment"><span class="header-section-number">8.0.2</span> Classification Accuracy Assessment</h3>
 <p>Three primary methods are presented for assessing classification accuracy: - Testing outputs with new datasets - Training/splitting training data - Cross-validation</p>
 <p>When test data is available, accuracy can be quantified through error matrices (confusion matrices) and Kappa coefficients. Error matrices compare predicted classes against reference data, revealing commission errors (false positives) and omission errors (false negatives). The Kappa coefficient measures agreement between classification and reference data while accounting for chance agreement. These metrics provide standardized ways to evaluate classification performance across different models and datasets.</p>
 </section>
-<section id="spatial-autocorrelation-challenges" class="level3" data-number="8.0.2">
-<h3 data-number="8.0.2" class="anchored" data-anchor-id="spatial-autocorrelation-challenges"><span class="header-section-number">8.0.2</span> Spatial Autocorrelation Challenges</h3>
+<section id="spatial-autocorrelation-challenges" class="level3" data-number="8.0.3">
+<h3 data-number="8.0.3" class="anchored" data-anchor-id="spatial-autocorrelation-challenges"><span class="header-section-number">8.0.3</span> Spatial Autocorrelation Challenges</h3>
 <p>A critical issue in remote sensing classification is spatial autocorrelation - the tendency for nearby observations to be more similar than distant ones. This phenomenon violates the independence assumption in many statistical models and can lead to overly optimistic accuracy assessments. The lecture presents two approaches to address this challenge: - Object-Based Image Analysis (OBIA) - Spatial cross-validation</p>
 <p>Spatial cross-validation specifically addresses this by ensuring training and validation data are spatially separated, providing more realistic accuracy assessments than random sampling approaches.</p>
 </section>
-<section id="advanced-classification-methods" class="level3" data-number="8.0.3">
-<h3 data-number="8.0.3" class="anchored" data-anchor-id="advanced-classification-methods"><span class="header-section-number">8.0.3</span> Advanced Classification Methods</h3>
-<section id="object-based-image-analysis-obia" class="level4" data-number="8.0.3.1">
-<h4 data-number="8.0.3.1" class="anchored" data-anchor-id="object-based-image-analysis-obia"><span class="header-section-number">8.0.3.1</span> Object-Based Image Analysis (OBIA)</h4>
+<section id="advanced-classification-methods" class="level3" data-number="8.0.4">
+<h3 data-number="8.0.4" class="anchored" data-anchor-id="advanced-classification-methods"><span class="header-section-number">8.0.4</span> Advanced Classification Methods</h3>
+<section id="object-based-image-analysis-obia" class="level4" data-number="8.0.4.1">
+<h4 data-number="8.0.4.1" class="anchored" data-anchor-id="object-based-image-analysis-obia"><span class="header-section-number">8.0.4.1</span> Object-Based Image Analysis (OBIA)</h4>
 <p>OBIA represents a paradigm shift from pixel-based approaches by segmenting images into homogeneous objects before classification. This approach: - Considers spectral, spatial, textural, and contextual information - Mimics human visual interpretation processes - Better captures real-world entities like buildings, fields, and forest stands</p>
 <p>The segmentation process creates objects based on spectral similarity, shape parameters, and scale factors, allowing for multi-scale analysis that can detect features at different levels of detail.</p>
 </section>
-<section id="sub-pixel-classification" class="level4" data-number="8.0.3.2">
-<h4 data-number="8.0.3.2" class="anchored" data-anchor-id="sub-pixel-classification"><span class="header-section-number">8.0.3.2</span> Sub-pixel Classification</h4>
+<section id="sub-pixel-classification" class="level4" data-number="8.0.4.2">
+<h4 data-number="8.0.4.2" class="anchored" data-anchor-id="sub-pixel-classification"><span class="header-section-number">8.0.4.2</span> Sub-pixel Classification</h4>
 <p>This technique addresses the mixed pixel problem by determining the proportional coverage of different land cover types within individual pixels. Methods include: - Spectral Mixture Analysis (SMA): Identifies “pure” spectral signatures (endmembers) and calculates their fractional abundance in each pixel</p>
 </section>
 </section>
 <section id="applications" class="level2" data-number="8.1">
 <h2 data-number="8.1" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.1</span> Applications</h2>
 <p>Object-based classification has gained significant traction in urban remote sensing applications due to its ability to better delineate complex urban features.</p>
-<p>Georganos et al.&nbsp;(2018) demonstrated the effectiveness of combining OBIA with machine learning, specifically Extreme Gradient Boosting (XGBoost), for very high-resolution urban land use and land cover classification. Their study showed that incorporating contextual information and morphological attributes significantly improved classification accuracy in heterogeneous urban landscapes. This approach is particularly valuable for mapping urban environments with complex and diverse land use patterns.</p>
+<p>Georganos et al.&nbsp;(2018) Georganos<span class="citation" data-cites="georganos2018">(<a href="references.html#ref-georganos2018" role="doc-biblioref"><strong>georganos2018?</strong></a>)</span>demonstrated the effectiveness of combining OBIA with machine learning, specifically Extreme Gradient Boosting (XGBoost), for very high-resolution urban land use and land cover classification. Their study showed that incorporating contextual information and morphological attributes significantly improved classification accuracy in heterogeneous urban landscapes. This approach is particularly valuable for mapping urban environments with complex and diverse land use patterns.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="qimages/7.2.png" class="img-fluid figure-img"></p>
 <figcaption>(a) Pleiades RGB composite of a central urban region in Dakar and (b) LULC map of the same region using Xgboost with the largest sample size (N60 )</figcaption>
 </figure>
 </div>
-<p>Sub-pixel classification has proven valuable for monitoring urban vegetation and impervious surface dynamics. Dencg and Wu (2013) applied spectral mixture analysis to quantify urban vegetation abundance in Milwaukee, Wisconsin, demonstrating how this approach can detect subtle changes in urban greenness that traditional binary classifications would miss. Their study revealed that vegetation fraction maps derived from spectral unmixing correlated strongly with field measurements (R² = 0.87) and provided more nuanced information about urban ecological conditions than conventional NDVI thresholding. These applications highlight how advanced classification methods can enhance our understanding of complex urban environments by capturing gradual transitions and mixed land cover types that characterize cities.</p>
+<p>Sub-pixel classification has proven valuable for monitoring urban vegetation and impervious surface dynamics. Dencg and Wu (2013)Deng<span class="citation" data-cites="deng2013">(<a href="references.html#ref-deng2013" role="doc-biblioref"><strong>deng2013?</strong></a>)</span> applied spectral mixture analysis to quantify urban vegetation abundance in Milwaukee, Wisconsin, demonstrating how this approach can detect subtle changes in urban greenness that traditional binary classifications would miss. Their study revealed that vegetation fraction maps derived from spectral unmixing correlated strongly with field measurements (R² = 0.87) and provided more nuanced information about urban ecological conditions than conventional NDVI thresholding. These applications highlight how advanced classification methods can enhance our understanding of complex urban environments by capturing gradual transitions and mixed land cover types that characterize cities.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
 <p><img src="qimages/7.3.jpg" class="img-fluid figure-img"></p>
@@ -694,8 +687,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./wk7.html" class="pagination-link" aria-label="wk6">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">wk6</span></span>
+      <a href="./wk7.html" class="pagination-link" aria-label="Classification I">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Classification I</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
