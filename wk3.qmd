@@ -30,9 +30,8 @@ The techniques learned this week represent fundamental tools in the remote sensi
 
 What I found most interesting was how these seemingly technical procedures connect directly to real-world applications in urban planning, environmental monitoring, and conservation. The ability to accurately measure vegetation health in cities or detect subtle changes in forest structure has profound implications for addressing pressing environmental challenges. Looking forward, I believe these skills will be valuable in my future work, particularly the combination of spectral and textural analysis for complex landscape characterization. However, I recognize that remote sensing is just one tool among many, and its integration with field data and local knowledge is essential for developing holistic understanding of environmental systems.
 
-## References
-::: {#refs}
-:::
+
+
 ## 1
 1.  Wang, D., et al. (2024). Evaluation of five atmospheric correction algorithms for remote sensing imagery. Science of The Total Environment.
 
