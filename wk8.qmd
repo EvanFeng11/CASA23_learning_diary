@@ -10,13 +10,23 @@ Remote sensing classification begins with the fundamental question of what const
 
 ### Classification Accuracy Assessment
 
-Three primary methods are presented for assessing classification accuracy: - Testing outputs with new datasets - Training/splitting training data - Cross-validation
+Three primary methods are presented for assessing classification accuracy:
+
+-   Testing outputs with new datasets
+
+-   Training/splitting training data
+
+-   Cross-validation
 
 When test data is available, accuracy can be quantified through error matrices (confusion matrices) and Kappa coefficients. Error matrices compare predicted classes against reference data, revealing commission errors (false positives) and omission errors (false negatives). The Kappa coefficient measures agreement between classification and reference data while accounting for chance agreement. These metrics provide standardized ways to evaluate classification performance across different models and datasets.
 
 ### Spatial Autocorrelation Challenges
 
-A critical issue in remote sensing classification is spatial autocorrelation - the tendency for nearby observations to be more similar than distant ones. This phenomenon violates the independence assumption in many statistical models and can lead to overly optimistic accuracy assessments. The lecture presents two approaches to address this challenge: - Object-Based Image Analysis (OBIA) - Spatial cross-validation
+A critical issue in remote sensing classification is spatial autocorrelation - the tendency for nearby observations to be more similar than distant ones. This phenomenon violates the independence assumption in many statistical models and can lead to overly optimistic accuracy assessments. The lecture presents two approaches to address this challenge:
+
+-   Object-Based Image Analysis (OBIA)
+
+-   Spatial cross-validation
 
 Spatial cross-validation specifically addresses this by ensuring training and validation data are spatially separated, providing more realistic accuracy assessments than random sampling approaches.
 
@@ -24,13 +34,21 @@ Spatial cross-validation specifically addresses this by ensuring training and va
 
 #### Object-Based Image Analysis (OBIA)
 
-OBIA represents a paradigm shift from pixel-based approaches by segmenting images into homogeneous objects before classification. This approach: - Considers spectral, spatial, textural, and contextual information - Mimics human visual interpretation processes - Better captures real-world entities like buildings, fields, and forest stands
+OBIA represents a paradigm shift from pixel-based approaches by segmenting images into homogeneous objects before classification. This approach:
+
+-   Considers spectral, spatial, textural, and contextual information
+
+-   Mimics human visual interpretation processes
+
+-   Better captures real-world entities like buildings, fields, and forest stands
 
 The segmentation process creates objects based on spectral similarity, shape parameters, and scale factors, allowing for multi-scale analysis that can detect features at different levels of detail.
 
 #### Sub-pixel Classification
 
-This technique addresses the mixed pixel problem by determining the proportional coverage of different land cover types within individual pixels. Methods include: - Spectral Mixture Analysis (SMA): Identifies "pure" spectral signatures (endmembers) and calculates their fractional abundance in each pixel
+This technique addresses the mixed pixel problem by determining the proportional coverage of different land cover types within individual pixels. Methods include:
+
+-   Spectral Mixture Analysis (SMA): Identifies "pure" spectral signatures (endmembers) and calculates their fractional abundance in each pixel
 
 ## Applications
 
