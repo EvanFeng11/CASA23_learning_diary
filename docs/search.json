@@ -52,21 +52,21 @@
   {
     "objectID": "intro.html",
     "href": "intro.html",
-    "title": "3  Introduction",
+    "title": "10  Introduction",
     "section": "",
     "text": "This is a book created from markdown and executable code.\nSee Knuth (1984) for additional discussion of literate programming.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
     "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Introduction</span>"
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Introduction</span>"
     ]
   },
   {
     "objectID": "summary.html",
     "href": "summary.html",
-    "title": "4  Summary",
+    "title": "11  Summary",
     "section": "",
     "text": "In summary, this book has no content whatsoever.\n\n1 + 1\n\n[1] 2",
     "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Summary</span>"
+      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Summary</span>"
     ]
   },
   {
@@ -84,7 +84,7 @@
     "href": "index.html",
     "title": "CASA23_learning_diary",
     "section": "",
-    "text": "1 HELLO\nThis is a Yifan’s Quarto book.\nWelcome to my study diary!",
+    "text": "1 HELLO\nThis is a Yifan’s Quarto book.\nWelcome to my study diary!\nI’m really excited about this module, CASA0023: Remotely Sensing Cities and Environments, because it focuses on practical skills. I think these skills will be super useful for me in the future, whether it’s in research or in a professional role. I’m also looking forward to learning more about how spatial data can be integrated into policies to make cities more sustainable.\nOverall, I hope this module will help me build the technical and analytical skills I need to make a real impact in the field of urban sustainability and climate resilience. Plus, I’m excited to create an online portfolio that I can use as a showcase for what I’ve learned!",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>CASA23 Learning Diary</span>"
     ]
@@ -127,6 +127,216 @@
     "text": "4.4 References\n\nWang, D., et al. (2024). Evaluation of five atmospheric correction algorithms for remote sensing imagery. Science of The Total Environment.\nSchulte to Bühne, H., & Pettorelli, N. (2018). Better together: Integrating and fusing multispectral and radar satellite imagery to inform biodiversity monitoring, ecological research and conservation science. Methods in Ecology and Evolution, 9, 849-865.\nChen, C., et al. (2012). Atmospheric correction of remote sensing imagery based on advanced algorithms. Science China Earth Sciences.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Remote Sensing Data and Correction</span>"
+    ]
+  },
+  {
+    "objectID": "wk4.html",
+    "href": "wk4.html",
+    "title": "5  Remote Sensing for Urban Policy",
+    "section": "",
+    "text": "5.1 Summary\nPhoenix, Arizona faces significant challenges from extreme heat, with the city experiencing an average of 110 days annually above 100°F (37.8°C). In response, Phoenix established the nation’s first municipal Heat Response and Mitigation Office (HRMO) in 2021, demonstrating pioneering leadership in urban climate adaptation. The city recently released its 2025 Heat Response Plan which outlines a comprehensive framework for reducing heat-related fatalities, decreasing urban temperatures, and building community resilience through targeted interventions in the built environment (City of Phoenix, 2025). This policy directly aligns with SDG 13 (Climate Action), focusing specifically on target 13.1 to “strengthen resilience and adaptive capacity to climate-related hazards and natural disasters.”\nIn January 2020, Phoenix became a member of the C40 Cities network, joining 94 global cities committed to leadership in addressing climate change and improving environmental and economic well-being for residents. As part of this commitment, Phoenix developed its 2021 Climate Action Plan (CAP) which establishes a roadmap for reducing greenhouse gas emissions and building climate resilience. The city’s membership in C40 has facilitated knowledge exchange with other heat-stressed cities and accelerated adoption of evidence-based cooling strategies (C40 Cities, 2023). Beyond the cool pavement program and tree canopy expansion, Phoenix is implementing several innovative heat mitigation initiatives including: (1) HeatReady certification program that helps neighborhoods prepare for extreme heat events, (2) Cool Corridor program creating shaded pathways to transit stops, and (3) Building Energy Benchmarking ordinance requiring large buildings to track and report energy performance, indirectly addressing urban heat through reduced energy consumption and emissions (City of Phoenix, 2021).",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Remote Sensing for Urban Policy</span>"
+    ]
+  },
+  {
+    "objectID": "wk4.html#summary",
+    "href": "wk4.html#summary",
+    "title": "5  Remote Sensing for Urban Policy",
+    "section": "",
+    "text": "The 2024 Heat Response Plan for Summer",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Remote Sensing for Urban Policy</span>"
+    ]
+  },
+  {
+    "objectID": "wk4.html#applications",
+    "href": "wk4.html#applications",
+    "title": "5  Remote Sensing for Urban Policy",
+    "section": "5.2 Applications",
+    "text": "5.2 Applications\nRemote sensing technologies offer practical solutions for implementing Phoenix’s heat mitigation strategies through detailed thermal mapping and analysis. For identifying priority intervention areas, Phoenix could apply Connors et al.’s (2013) object-based image analysis methodology that segments QuickBird satellite imagery (0.6m resolution) into distinct urban objects and analyzes their spatial relationships to surface temperature. This approach reveals how specific neighborhood configurations amplify heat, allowing Phoenix to target interventions where modest changes to urban configuration would yield maximum cooling benefits rather than simply addressing the hottest areas.\n\n\n\nImage of LSTs within the study area from ASTER taken at 2235 h LT, June 11 2008\n\n\nFor optimizing the cool pavement program, Phoenix could apply Li et al.’s (2016) spatial regression methodology that quantifies relationships between land surface temperature and urban form. By combining Landsat thermal data with cadastral and socioeconomic information, this approach helps identify how urban configuration influences surface temperature across neighborhoods. Their research found that a 10% increase in impervious surface connectivity can increase land surface temperature by up to 0.9°C, providing Phoenix with specific targets for strategic pavement modification to disrupt heat-amplifying surface networks.\n\n\n\nDerived land surface temperatures for the city of Phoenix using Landsat TM and selected census blocks in samples A and B. The points represent the selected census blocks.\n\n\nFor the Cool Corridor program, Phoenix could implement Park et al.’s (2021) approach combining 3D city modeling with thermal remote sensing. Using high-resolution digital surface models from LiDAR, building footprint data, tree canopy information, and thermal imagery, this methodology calculates shadow patterns throughout the day to quantify cooling effects of shade structures. Their findings that tree-shaded surfaces were 4.8°C cooler than unshaded areas provide Phoenix with evidence-based guidelines for optimal placement of shade structures along pedestrian routes to transit stops.\n\n\n\nLiDAR point cloud classification and 3D building height estimations.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Remote Sensing for Urban Policy</span>"
+    ]
+  },
+  {
+    "objectID": "wk4.html#reflection",
+    "href": "wk4.html#reflection",
+    "title": "5  Remote Sensing for Urban Policy",
+    "section": "5.3 Reflection",
+    "text": "5.3 Reflection\nWorking through Phoenix’s heat mitigation strategies has transformed my understanding of how remote sensing bridges the gap between climate policy aspirations and implementation. Before this analysis, I viewed urban heat as a uniform phenomenon addressable through standardized interventions. Now I appreciate the intricate spatial dynamics of urban heat—how the arrangement of buildings, vegetation, and pavement creates unique thermal signatures requiring tailored solutions.\nI was also struck by the powerful intersection of remote sensing and environmental justice. The correlation between income levels and vegetation cover highlights how technological tools can make visible the often-hidden patterns of environmental inequality, ensuring climate adaptation efforts don’t inadvertently reinforce existing disparities.\nLooking forward, I’m particularly interested in how Phoenix’s C40 membership might facilitate knowledge transfer of these methodologies to other heat-stressed cities globally. The Phoenix case has convinced me that effective climate adaptation requires not just technological solutions but also institutional frameworks that can translate satellite-derived insights into equitable, community-specific interventions.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Remote Sensing for Urban Policy</span>"
+    ]
+  },
+  {
+    "objectID": "wk4.html#references",
+    "href": "wk4.html#references",
+    "title": "5  Remote Sensing for Urban Policy",
+    "section": "5.4 References",
+    "text": "5.4 References\nC40 Cities. (2023). Phoenix. Retrieved from https://www.c40.org/cities/phoenix/\nCity of Phoenix. (2021). Climate Action Plan. Office of Environmental Programs. Retrieved from https://www.phoenix.gov/administration/departments/oep/climate-change.html\nCity of Phoenix. (2025). 2025 Heat Response Plan Presented at City Council Policy Session. Retrieved from https://www.phoenix.gov/newsroom/heat-news/2025-heat-response-plan-presented-at-city-council-policy-session.html\nConnors, J. P., Galletti, C. S., & Chow, W. T. (2013). Landscape configuration and urban heat island effects: Assessing the relationship between landscape characteristics and land surface temperature in Phoenix, Arizona. Landscape Ecology, 28(2), 271-283. https://doi.org/10.1007/s10980-012-9833-1\nLi, X., Li, W., Middel, A., Harlan, S. L., Brazel, A. J., & Turner, B. L. (2016). Remote sensing of the surface urban heat island and land architecture in Phoenix, Arizona: Combined effects of land composition and configuration and cadastral–demographic–economic factors. Remote Sensing of Environment, 174, 233-243. https://doi.org/10.1016/j.rse.2015.12.022\nPark, Y., Guldmann, J. M., & Liu, D. (2021). Impacts of tree and building shades on the urban heat island: Combining remote sensing, 3D digital city and spatial regression approaches. Computers, Environment and Urban Systems, 88, 101655. https://doi.org/10.1016/j.compenvurbsys.2021.101655",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Remote Sensing for Urban Policy</span>"
+    ]
+  },
+  {
+    "objectID": "wk6.html",
+    "href": "wk6.html",
+    "title": "6  Google Earth Engine (GEE)",
+    "section": "",
+    "text": "6.1 Summary\nThis week we explored Google Earth Engine (GEE), a powerful cloud-based platform for planetary-scale geospatial analysis. The lecture introduced GEE’s architecture, which consists of a JavaScript API frontend and Google’s distributed computing backend that handles petabytes of satellite imagery. We learned about GEE’s data catalog, which provides access to different years of historical imagery and scientific datasets from NASA, ESA, and other providers without requiring local downloads (Gorelick et al.， 2017).改格式 The platform’s key advantage is its ability to shift processing from client-side to server-side, allowing complex computations on massive datasets that would be impossible on personal computers. We explored GEE’s core data structures: Image (raster data), Feature (vector data), ImageCollection, and FeatureCollection, along with methods to filter, map, and reduce these collections.\nIn the practical session, we implemented Principal Component Analysis (PCA) on Landsat 8 imagery to identify the main sources of variation across spectral bands. This involved loading an ImageCollection, filtering by date and location, creating a cloud-free composite, and then applying the PCA transformation to extract the principal components. The hands-on exercise demonstrated how GEE’s computational power enables complex statistical analyses that would require significant preprocessing and computing resources in traditional workflows. Compared to our previous work in ArcGIS, GEE offers a much more streamlined experience for satellite image processing - what previously required downloading gigabytes of data and writing lengthy code can now be accomplished with just a few lines of JavaScript in GEE, with results appearing almost instantly. This efficiency completely transforms how we can approach large-scale remote sensing projects, making analyses that were once prohibitively resource-intensive now accessible from any web browser.\nGoogle Earth Engine (GEE) has demonstrated remarkable potential in environmental monitoring and disaster management. Chen et al. (2021) developed a GEE-based approach, the Continuous Change Detection and Classification - Spectral Mixture Analysis (CCDC-SMA), to monitor temperate forest degradation. By combining Landsat time series data with reference sample points, their method achieved high-precision monitoring of forest degradation and deforestation in Georgia from 1987 to 2019. Leveraging GEE’s capability to process extensive time series data, the study analyzed thousands of satellite images to construct a continuous record of forest cover changes. This innovative approach not only overcame the limitations of traditional forest monitoring methods but also significantly enhanced the temporal resolution of change detection.\nIn urban and environmental studies, Google Earth Engine (GEE) has been widely applied to land surface temperature (LST) estimation. Ermida et al. (2020) developed an open-source method using GEE for estimating LST from Landsat series satellite data. Their approach, based on single-channel and split-window algorithms, utilizes thermal infrared bands from Landsat 4-8 to generate LST products. Compared to traditional methods, their GEE implementation significantly improved processing efficiency, enabling researchers to quickly produce LST data for large areas over long time series. This open-source tool provides a valuable resource for applications such as urban heat island effect analysis and environmental monitoring.\nHalder and Bose (2024) evaluated the application of Google Earth Engine (GEE) in sustainable flood hazard mapping, with a focus on Glacial Lake Outburst Floods (GLOF). They developed a method for automatically extracting flood extents using time series analysis of Sentinel-1 Synthetic Aperture Radar (SAR) data. The approach compares radar backscatter changes before and after flood events, integrating terrain and land cover information to achieve accurate and efficient flood mapping. Leveraging GEE’s parallel computing capabilities, the analysis can be completed within hours after a disaster occurs, providing critical information for emergency response. This method highlights the potential of GEE for rapid and sustainable flood hazard assessments, particularly in the context of climate change and glacial lake dynamics.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "wk6.html#summary",
+    "href": "wk6.html#summary",
+    "title": "6  Google Earth Engine (GEE)",
+    "section": "",
+    "text": "The Google Earth Engine platform\n\n\n\n\n\n\n\nTraining data and feature selection for land cover classification\n\n\n\n\n\n\n\nSituation of flooded area on specific dates after the cloud burst rainfall and GLOF event.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "wk6.html#reflection",
+    "href": "wk6.html#reflection",
+    "title": "6  Google Earth Engine (GEE)",
+    "section": "6.2 Reflection",
+    "text": "6.2 Reflection\nLearning Google Earth Engine has profoundly shown me the immense potential of Earth observation technologies in addressing environmental and urban challenges. As someone who has previously worked on mine land rehabilitation projects, I immediately recognized GEE’s value in this field. Traditional mine area monitoring methods often rely on limited field sampling and intermittent aerial photography, making it difficult to comprehensively capture the dynamic process of mine recovery. GEE’s long time series satellite data and powerful analytical capabilities can help us continuously monitor vegetation recovery, soil erosion changes, and hydrological condition improvements in mining areas, providing more comprehensive evidence for restoration effect assessment.\nSpecifically, GEE’s PCA capabilities allow for the identification of subtle recovery patterns across mine sites by reducing data dimensionality, enabling more efficient analysis of temporal changes without the computational burden of processing terabytes of raw satellite imagery. However, I also realize that integrating GEE into actual land restoration policies still faces challenges, such as local governments’ acceptance of new technologies, technical personnel training requirements, and how to translate remote sensing results into specific restoration measures. Nevertheless, I believe that as GEE’s user interface continues to improve and more success cases emerge, these barriers will gradually diminish. For me, mastering GEE has not only expanded my technical toolkit but also opened up new possibilities for participating in larger-scale, more systematic environmental restoration projects in the future.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "wk6.html#references",
+    "href": "wk6.html#references",
+    "title": "6  Google Earth Engine (GEE)",
+    "section": "6.3 References",
+    "text": "6.3 References\nChen, S. et al. (2021) Monitoring temperate forest degradation on Google Earth Engine using Landsat time series analysis. Remote sensing of environment. [Online] 265112648-.\nErmida, S. L. et al. (2020) Google earth engine open-source code for land surface temperature estimation from the landsat series. Remote sensing (Basel, Switzerland). [Online] 12 (9), 1471-.\nSubhra Halder & Suddhasil Bose (2024) Sustainable flood hazard mapping with GLOF: A Google Earth Engine approach. Natural hazards research. [Online] 4 (4), 573–578. Gorelick, N. et al. (2017) Google Earth Engine: Planetary-scale geospatial analysis for everyone. Remote sensing of environment. [Online] 20218–27.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Google Earth Engine (GEE)</span>"
+    ]
+  },
+  {
+    "objectID": "wk7.html",
+    "href": "wk7.html",
+    "title": "7  wk6",
+    "section": "",
+    "text": "8 Learning Diary: Week 6 - Classification I",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>wk6</span>"
+    ]
+  },
+  {
+    "objectID": "wk7.html#summary",
+    "href": "wk7.html#summary",
+    "title": "7  wk6",
+    "section": "8.1 Summary",
+    "text": "8.1 Summary\nThis week I explored classification techniques for remote sensing data, diving into both supervised and unsupervised methods. Having previously studied machine learning fundamentals, I was excited to see how these concepts apply specifically to satellite imagery analysis. I found classification to be a critical step in processing remotely sensed imagery, as it allows pixels to be grouped based on their spectral characteristics to identify land cover types. The lecture introduced various classification algorithms including linear regression, Classification and Regression Trees (CART), Random Forests, and Support Vector Machines (SVM). I was particularly interested in how SVMs work by finding optimal hyperplanes to separate classes with maximum margins, while Random Forests overcome the overfitting limitations of individual decision trees through creating multiple trees and aggregating their predictions. During the practical session, I implemented these techniques in Google Earth Engine, applying classification algorithms to Sentinel imagery to identify different land cover types. I learned about the concept of “black box” algorithms, where the decision-making process remains opaque, making it difficult to interpret why certain pixels are assigned to specific classes. I also realized that supervised classification requires high-quality training data, which can be resource-intensive to create but yields more accurate and reliable results compared to unsupervised methods.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>wk6</span>"
+    ]
+  },
+  {
+    "objectID": "wk7.html#applications",
+    "href": "wk7.html#applications",
+    "title": "7  wk6",
+    "section": "8.2 Applications",
+    "text": "8.2 Applications\nRecent literature demonstrates diverse applications of classification techniques in remote sensing. Maxwell et al. (2018) conducted a comprehensive review of machine-learning classification methods in remote sensing, evaluating algorithms such as Random Forest, Support Vector Machine, and k-Nearest Neighbor. Their findings highlighted that Random Forest consistently outperformed other classifiers, achieving overall accuracies exceeding 90% while requiring less computational resources. The study emphasized the advantages of ensemble methods like Random Forest in effectively handling the high dimensionality of remotely sensed data, compared to traditional parametric classifiers.\nIn a related study, Zhang et al. (2019) explored the application of deep learning techniques, specifically Convolutional Neural Networks (CNNs), for joint land cover and land use classification using high-resolution satellite imagery. Their approach achieved classification accuracies ranging from 87% to 92% across different urban environments. The research demonstrated the ability of CNNs to automatically extract hierarchical features from imagery, reducing the reliance on manual feature engineering required by traditional methods. These advancements underscore the growing importance of machine learning and deep learning in remote sensing applications. \nIn agricultural applications, Belgiu and Csillik (2018) applied both pixel-based and object-based classification methods to map crop types using multi-temporal Sentinel-2 imagery. Their approach incorporated phenological information through time series analysis, achieving a 15-20% improvement in classification accuracy compared to single-date imagery classification. The authors highlighted how object-based approaches reduced the “salt-and-pepper” effect common in pixel-based classifications, producing more coherent agricultural field boundaries.\n\n\n\nThe workflow of pixel-based and object-based TWDTW and RF approaches\n\n\nFor environmental monitoring, Mahdianpari et al. (2019) utilized Random Forest and SVM classifiers to map wetland types using multi-source remote sensing data, including Sentinel-1 radar and Sentinel-2 optical imagery. Their research demonstrated that integrating different data sources significantly improved classification accuracy, from 71% with optical data alone to 94% with the combined dataset. This multi-source approach proved particularly valuable in areas where cloud cover frequently limits the availability of optical imagery, showcasing the robustness of modern classification techniques in addressing complex environmental mapping challenges.\n\n\n\nThe final land cover map for the Island of Newfoundland obtained from the object-based Random Forest (RF) classification using the multi-year summer SAR/optical composite. An overall accuracy of 88.37% and a Kappa coefficient of 0.85 were achieved. A total of six insets and their corresponding optical images (i.e., Sentinel-2) were also illustrated to appreciate some of the classification details. Please also see Supplementary Materials for details of the final classification map.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>wk6</span>"
+    ]
+  },
+  {
+    "objectID": "wk7.html#reflection",
+    "href": "wk7.html#reflection",
+    "title": "7  wk6",
+    "section": "8.3 Reflection",
+    "text": "8.3 Reflection\nAs I reflect on this week’s content, I’m struck by how classification techniques represent the cornerstone of extracting meaningful information from remote sensing data. I’ve realized that choosing appropriate methods requires careful consideration of data characteristics, research objectives, and available resources. The trade-offs between supervised and unsupervised approaches mirror challenges I’ve encountered in other data science contexts: balancing accuracy with interpretability, and weighing the costs of data preparation against the benefits of more precise results. What I found particularly intriguing was how these seemingly technical choices have profound real-world implications. I immediately thought about applications in China’s “red line” policy for arable land protection, where accurate classification of agricultural land is crucial for monitoring compliance with the national 1.8 billion mu (mu, Chinese unit of land measurement that is commonly 666.7 square metres，120 million hectares) minimum farmland preservation target. These classification techniques could help authorities track land use changes and enforce this critical food security policy more effectively. Looking forward, I believe the evolution of explainable AI approaches could address the “black box” limitations of current classification methods. As I consider my future research interests in urban sustainability, I’m excited about the ability to accurately classify urban land cover and monitor changes over time, though I recognize I’ll need to complement these technical approaches with ground-truth validation and contextual understanding of the areas being studied.\n##References Maxwell, A. E. et al. (2018) Implementation of machine-learning classification in remote sensing: an applied review. International journal of remote sensing. [Online] 39 (9), 2784–2817.\nBelgiu, M. & Csillik, O. (2018) Sentinel-2 cropland mapping using pixel-based and object-based time-weighted dynamic time warping analysis. Remote sensing of environment. [Online] 204509–523.\nZhang, C. et al. (2019) Joint Deep Learning for land cover and land use classification. Remote sensing of environment. [Online] 221173–187.\nMahdianpari, M. et al. (2019) The first wetland inventory map of newfoundland at a spatial resolution of 10 m using sentinel-1 and sentinel-2 data on the Google Earth Engine cloud computing platform. Remote sensing (Basel, Switzerland). [Online] 11 (1), 43-.",
+    "crumbs": [
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>wk6</span>"
+    ]
+  },
+  {
+    "objectID": "wk8.html",
+    "href": "wk8.html",
+    "title": "8  Classification II",
+    "section": "",
+    "text": "8.0.1 Classification Accuracy Assessment\n##Summary ### Introduction to Classification Units Remote sensing classification begins with the fundamental question of what constitutes the basic unit of analysis. Four key units are objects, pixels, mixels (mixed pixels), and mixed objects. Each represents a different approach to how we segment and analyze Earth Observation (EO) data. Pixels are the traditional unit, representing fixed grid cells, while objects are homogeneous regions that may contain multiple pixels. Mixels contain multiple land cover types within a single pixel, creating classification challenges, while mixed objects represent regions with heterogeneous characteristics. The choice of unit significantly impacts classification outcomes and accuracy.\nThree primary methods are presented for assessing classification accuracy: - Testing outputs with new datasets - Training/splitting training data - Cross-validation\nWhen test data is available, accuracy can be quantified through error matrices (confusion matrices) and Kappa coefficients. Error matrices compare predicted classes against reference data, revealing commission errors (false positives) and omission errors (false negatives). The Kappa coefficient measures agreement between classification and reference data while accounting for chance agreement. These metrics provide standardized ways to evaluate classification performance across different models and datasets.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Classification II</span>"
+    ]
+  },
+  {
+    "objectID": "wk8.html#applications",
+    "href": "wk8.html#applications",
+    "title": "8  Classification II",
+    "section": "8.1 Applications",
+    "text": "8.1 Applications\nObject-based classification has gained significant traction in urban remote sensing applications due to its ability to better delineate complex urban features.\nGeorganos et al. (2018) demonstrated the effectiveness of combining OBIA with machine learning, specifically Extreme Gradient Boosting (XGBoost), for very high-resolution urban land use and land cover classification. Their study showed that incorporating contextual information and morphological attributes significantly improved classification accuracy in heterogeneous urban landscapes. This approach is particularly valuable for mapping urban environments with complex and diverse land use patterns.\n\n\n\n(a) Pleiades RGB composite of a central urban region in Dakar and (b) LULC map of the same region using Xgboost with the largest sample size (N60 )\n\n\nSub-pixel classification has proven valuable for monitoring urban vegetation and impervious surface dynamics. Dencg and Wu (2013) applied spectral mixture analysis to quantify urban vegetation abundance in Milwaukee, Wisconsin, demonstrating how this approach can detect subtle changes in urban greenness that traditional binary classifications would miss. Their study revealed that vegetation fraction maps derived from spectral unmixing correlated strongly with field measurements (R² = 0.87) and provided more nuanced information about urban ecological conditions than conventional NDVI thresholding. These applications highlight how advanced classification methods can enhance our understanding of complex urban environments by capturing gradual transitions and mixed land cover types that characterize cities.\n\n\n\nLand Surface Temperature (LST) estimates generated from (A) the Landsat ETM+ thermal image using the mono-window algorithm, (B) the SUTM method, (C) NDVI-based linear regression model, (D) %GV-based linear regression model, and (E) %ISA-based linear regression model",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Classification II</span>"
+    ]
+  },
+  {
+    "objectID": "wk8.html#reflection",
+    "href": "wk8.html#reflection",
+    "title": "8  Classification II",
+    "section": "8.2 Reflection",
+    "text": "8.2 Reflection\nThe advanced classification methods covered this week represent a significant evolution in remote sensing analysis, moving beyond the limitations of traditional pixel-based approaches. What I found particularly interesting was how these techniques attempt to bridge the gap between computational classification and human visual interpretation. I must admit that this week’s content felt particularly challenging. The mathematical concepts behind spectral unmixing and the numerous parameters involved in OBIA segmentation were initially overwhelming. During the practical, I struggled with selecting appropriate endmembers and understanding the error metrics in spectral unmixing. The transition from the relatively straightforward pixel-based classification to these more sophisticated methods represented a steep learning curve that required me to revisit concepts multiple times.\nThese approaches seem especially relevant for my interest in urban sustainability monitoring, where the complex mosaic of built environments, vegetation, and impervious surfaces requires nuanced analysis beyond binary classifications. However, I recognize that implementing these methods involves trade-offs - OBIA demands more computational resources and parameter tuning, while sub-pixel classification requires careful endmember selection. Moving forward, I’m keen to explore how these advanced classification techniques could be combined with time-series analysis to monitor gradual urban changes and potentially integrate with policy frameworks for sustainable urban development.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Classification II</span>"
+    ]
+  },
+  {
+    "objectID": "wk8.html#references",
+    "href": "wk8.html#references",
+    "title": "8  Classification II",
+    "section": "8.3 References",
+    "text": "8.3 References\nMboga, N. et al. (2017) Detection of informal settlements from VHR images using convolutional neural networks. Remote sensing (Basel, Switzerland). [Online] 9 (11), 1106-.\nDeng, C. & Wu, C. (2013) Examining the impacts of urban biophysical compositions on surface urban heat island: A spectral unmixing and thermal mixing approach. Remote sensing of environment. [Online] 131262–274.\nGeorganos, S. et al. (2018) Very High Resolution Object-Based Land Use-Land Cover Urban Classification Using Extreme Gradient Boosting. IEEE geoscience and remote sensing letters. [Online] 15 (4), 607–611.",
+    "crumbs": [
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Classification II</span>"
+    ]
+  },
+  {
+    "objectID": "wk9.html",
+    "href": "wk9.html",
+    "title": "9  SAR and Temperature",
+    "section": "",
+    "text": "9.1 Summary\nThis week’s lecture introduced Synthetic Aperture Radar (SAR) technology. SAR is an active remote sensing technology that works by emitting microwave signals and measuring their backscatter. SAR’s unique advantage lies in its all-weather, day-and-night imaging capability, able to penetrate clouds and light precipitation, making it a valuable tool for urban environment monitoring. Interpreting SAR images requires understanding backscatter coefficients, incidence angles, surface roughness, and dielectric properties, which collectively influence the reflection characteristics of radar signals. In urban applications, SAR technology can be used to monitor infrastructure, detect ground deformation, and assess disaster impacts. SAR data processing typically involves radiometric correction, geometric correction, and terrain correction steps to improve data quality and accuracy.\nIn the practical session, we used two different data products—Landsat and MODIS—to explore temperature distribution in urban areas. Interestingly, the practical session this week diverged from SAR and explored temperature analysis using remote sensing data. This reminded me of Week 5’s lecture on temperature -urban heat islands (UHIs).\nUrban Heat Island (UHI) refers to the phenomenon where urban areas are warmer than surrounding rural areas, primarily caused by heat absorption of urban building materials, reduced vegetation cover, and heat generated by human activities. Thermal infrared remote sensing is a key technology for studying UHI, obtaining surface temperature distribution by measuring thermal radiation in the 8-14μm wavelength range. This technology is crucial for assessing the cooling benefits of green infrastructure, identifying heat risk areas within cities, and supporting climate-adaptive planning. Research on the urban heat island effect has significant implications for sustainable urban development and resident health, helping urban planners design more livable urban environments.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>SAR and Temperature</span>"
+    ]
+  },
+  {
+    "objectID": "wk9.html#applications",
+    "href": "wk9.html#applications",
+    "title": "9  SAR and Temperature",
+    "section": "9.2 Applications",
+    "text": "9.2 Applications\nTemperature monitoring has been widely applied in urban studies to assess the impact of urban heat islands (UHIs) on human health and the environment. For instance, Landsat thermal data has been used to map UHI intensity in cities worldwide, revealing significant temperature differences between urban and rural areas. This week’s practical exercise demonstrated how to process and visualize temperature data, providing insights into spatial temperature variations. A study by Zhou et al. (2015) highlights the importance of considering the spatial footprint of UHIs when designing urban policies, emphasizing the need for localized strategies to address heat-related challenges. This study investigates the Urban Heat Island (UHI) effect across 32 major Chinese cities using MODIS Land Surface Temperature (LST) data from 2003 to 2012. The UHI effect, characterized by elevated temperatures in urban areas compared to their rural surroundings, was found to decay exponentially with distance from urban centers.\n\n\n\nThe footprint of urban heat island effect (FP, times of urban area) for China’s 32 major cities averaged over 2003–2012\n\n\nSAR technology, with its all-weather and all-time observation capabilities, demonstrates unique advantages in urban monitoring. Ferretti et al. (2001) pioneered the Permanent Scatterer Interferometric SAR (PS-InSAR) technique for urban infrastructure monitoring, achieving millimeter-level precision in measuring surface deformation. This methodology has been widely applied to detect and monitor ground subsidence, structural instability, and infrastructure deterioration in urban environments. The research demonstrated SAR’s capability to provide continuous monitoring of critical urban structures, enabling early warning systems for potential hazards and supporting evidence-based urban management decisions. The non-invasive nature of SAR monitoring makes it particularly valuable for heritage conservation in historic urban centers while simultaneously supporting modern smart city initiatives through its ability to generate comprehensive deformation maps of entire metropolitan areas.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>SAR and Temperature</span>"
+    ]
+  },
+  {
+    "objectID": "wk9.html#reflection",
+    "href": "wk9.html#reflection",
+    "title": "9  SAR and Temperature",
+    "section": "9.3 Reflection",
+    "text": "9.3 Reflection\nReflecting on this week’s content, I was reminded of my previous study in Week 4 on Phoenix, Arizona, a city facing severe challenges from extreme heat. The practical session on temperature monitoring highlighted the importance of using remote sensing tools, such as thermal data, to analyze and address urban heat islands (UHIs). In the case of Phoenix, integrating Earth Observation (EO) data into urban planning policies could provide actionable insights to mitigate heat-related risks. However, the implementation of such tools faces challenges, including data accessibility, the need for technical expertise, and the integration of EO outputs into decision-making processes.\nSimilarly, SAR technology offers immense potential in monitoring environmental changes, but its application in policy requires overcoming barriers like cost and data processing complexity. Personally, I found the complementary nature of SAR and temperature monitoring particularly interesting, as they provide a holistic perspective on environmental dynamics. In the future, I see the integration of these tools becoming increasingly relevant, especially in addressing climate resilience in urban areas. While the tools presented this week may not directly apply to all contexts, their principles and methodologies can inspire innovative approaches to tackling complex environmental challenges.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>SAR and Temperature</span>"
+    ]
+  },
+  {
+    "objectID": "wk9.html#references",
+    "href": "wk9.html#references",
+    "title": "9  SAR and Temperature",
+    "section": "9.4 References",
+    "text": "9.4 References\nZhou, D. et al. (2015) The footprint of urban heat island effect in China. Scientific reports. [Online] 5 (1), 11160–11160.\nFerretti, A. et al. (2001) Permanent scatterers in SAR interferometry. IEEE transactions on geoscience and remote sensing. [Online] 39 (1), 8–20.",
+    "crumbs": [
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>SAR and Temperature</span>"
     ]
   }
 ]

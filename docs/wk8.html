@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>8&nbsp; wk6 – CASA23_learning_diary</title>
+<title>8&nbsp; Classification II – CASA23_learning_diary</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wk8.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">wk6</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./wk8.html"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classification II</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -133,13 +133,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">wk4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Remote Sensing for Urban Policy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Google Earth Engine (GEE)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -151,13 +151,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk8.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classification II</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SAR and Temperature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -183,15 +183,26 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#classification-accuracy-assessment" id="toc-classification-accuracy-assessment" class="nav-link active" data-scroll-target="#classification-accuracy-assessment"><span class="header-section-number">8.0.1</span> Classification Accuracy Assessment</a></li>
+  <li><a href="#spatial-autocorrelation-challenges" id="toc-spatial-autocorrelation-challenges" class="nav-link" data-scroll-target="#spatial-autocorrelation-challenges"><span class="header-section-number">8.0.2</span> Spatial Autocorrelation Challenges</a></li>
+  <li><a href="#advanced-classification-methods" id="toc-advanced-classification-methods" class="nav-link" data-scroll-target="#advanced-classification-methods"><span class="header-section-number">8.0.3</span> Advanced Classification Methods</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">8.1</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">8.2</span> Reflection</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">8.3</span> References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">wk6</span></h1>
+<h1 class="title"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classification II</span></h1>
 </div>
 
 
@@ -208,8 +219,60 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<p>##Summary ### Introduction to Classification Units Remote sensing classification begins with the fundamental question of what constitutes the basic unit of analysis. Four key units are objects, pixels, mixels (mixed pixels), and mixed objects. Each represents a different approach to how we segment and analyze Earth Observation (EO) data. Pixels are the traditional unit, representing fixed grid cells, while objects are homogeneous regions that may contain multiple pixels. Mixels contain multiple land cover types within a single pixel, creating classification challenges, while mixed objects represent regions with heterogeneous characteristics. The choice of unit significantly impacts classification outcomes and accuracy.</p>
+<section id="classification-accuracy-assessment" class="level3" data-number="8.0.1">
+<h3 data-number="8.0.1" class="anchored" data-anchor-id="classification-accuracy-assessment"><span class="header-section-number">8.0.1</span> Classification Accuracy Assessment</h3>
+<p>Three primary methods are presented for assessing classification accuracy: - Testing outputs with new datasets - Training/splitting training data - Cross-validation</p>
+<p>When test data is available, accuracy can be quantified through error matrices (confusion matrices) and Kappa coefficients. Error matrices compare predicted classes against reference data, revealing commission errors (false positives) and omission errors (false negatives). The Kappa coefficient measures agreement between classification and reference data while accounting for chance agreement. These metrics provide standardized ways to evaluate classification performance across different models and datasets.</p>
+</section>
+<section id="spatial-autocorrelation-challenges" class="level3" data-number="8.0.2">
+<h3 data-number="8.0.2" class="anchored" data-anchor-id="spatial-autocorrelation-challenges"><span class="header-section-number">8.0.2</span> Spatial Autocorrelation Challenges</h3>
+<p>A critical issue in remote sensing classification is spatial autocorrelation - the tendency for nearby observations to be more similar than distant ones. This phenomenon violates the independence assumption in many statistical models and can lead to overly optimistic accuracy assessments. The lecture presents two approaches to address this challenge: - Object-Based Image Analysis (OBIA) - Spatial cross-validation</p>
+<p>Spatial cross-validation specifically addresses this by ensuring training and validation data are spatially separated, providing more realistic accuracy assessments than random sampling approaches.</p>
+</section>
+<section id="advanced-classification-methods" class="level3" data-number="8.0.3">
+<h3 data-number="8.0.3" class="anchored" data-anchor-id="advanced-classification-methods"><span class="header-section-number">8.0.3</span> Advanced Classification Methods</h3>
+<section id="object-based-image-analysis-obia" class="level4" data-number="8.0.3.1">
+<h4 data-number="8.0.3.1" class="anchored" data-anchor-id="object-based-image-analysis-obia"><span class="header-section-number">8.0.3.1</span> Object-Based Image Analysis (OBIA)</h4>
+<p>OBIA represents a paradigm shift from pixel-based approaches by segmenting images into homogeneous objects before classification. This approach: - Considers spectral, spatial, textural, and contextual information - Mimics human visual interpretation processes - Better captures real-world entities like buildings, fields, and forest stands</p>
+<p>The segmentation process creates objects based on spectral similarity, shape parameters, and scale factors, allowing for multi-scale analysis that can detect features at different levels of detail.</p>
+</section>
+<section id="sub-pixel-classification" class="level4" data-number="8.0.3.2">
+<h4 data-number="8.0.3.2" class="anchored" data-anchor-id="sub-pixel-classification"><span class="header-section-number">8.0.3.2</span> Sub-pixel Classification</h4>
+<p>This technique addresses the mixed pixel problem by determining the proportional coverage of different land cover types within individual pixels. Methods include: - Spectral Mixture Analysis (SMA): Identifies “pure” spectral signatures (endmembers) and calculates their fractional abundance in each pixel</p>
+</section>
+</section>
+<section id="applications" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.1</span> Applications</h2>
+<p>Object-based classification has gained significant traction in urban remote sensing applications due to its ability to better delineate complex urban features.</p>
+<p>Georganos et al.&nbsp;(2018) demonstrated the effectiveness of combining OBIA with machine learning, specifically Extreme Gradient Boosting (XGBoost), for very high-resolution urban land use and land cover classification. Their study showed that incorporating contextual information and morphological attributes significantly improved classification accuracy in heterogeneous urban landscapes. This approach is particularly valuable for mapping urban environments with complex and diverse land use patterns.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="qimages/7.2.png" class="img-fluid figure-img"></p>
+<figcaption>(a) Pleiades RGB composite of a central urban region in Dakar and (b) LULC map of the same region using Xgboost with the largest sample size (N60 )</figcaption>
+</figure>
+</div>
+<p>Sub-pixel classification has proven valuable for monitoring urban vegetation and impervious surface dynamics. Dencg and Wu (2013) applied spectral mixture analysis to quantify urban vegetation abundance in Milwaukee, Wisconsin, demonstrating how this approach can detect subtle changes in urban greenness that traditional binary classifications would miss. Their study revealed that vegetation fraction maps derived from spectral unmixing correlated strongly with field measurements (R² = 0.87) and provided more nuanced information about urban ecological conditions than conventional NDVI thresholding. These applications highlight how advanced classification methods can enhance our understanding of complex urban environments by capturing gradual transitions and mixed land cover types that characterize cities.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="qimages/7.3.jpg" class="img-fluid figure-img"></p>
+<figcaption>Land Surface Temperature (LST) estimates generated from (A) the Landsat ETM+ thermal image using the mono-window algorithm, (B) the SUTM method, (C) NDVI-based linear regression model, (D) %GV-based linear regression model, and (E) %ISA-based linear regression model</figcaption>
+</figure>
+</div>
+</section>
+<section id="reflection" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.2</span> Reflection</h2>
+<p>The advanced classification methods covered this week represent a significant evolution in remote sensing analysis, moving beyond the limitations of traditional pixel-based approaches. What I found particularly interesting was how these techniques attempt to bridge the gap between computational classification and human visual interpretation. I must admit that this week’s content felt particularly challenging. The mathematical concepts behind spectral unmixing and the numerous parameters involved in OBIA segmentation were initially overwhelming. During the practical, I struggled with selecting appropriate endmembers and understanding the error metrics in spectral unmixing. The transition from the relatively straightforward pixel-based classification to these more sophisticated methods represented a steep learning curve that required me to revisit concepts multiple times.</p>
+<p>These approaches seem especially relevant for my interest in urban sustainability monitoring, where the complex mosaic of built environments, vegetation, and impervious surfaces requires nuanced analysis beyond binary classifications. However, I recognize that implementing these methods involves trade-offs - OBIA demands more computational resources and parameter tuning, while sub-pixel classification requires careful endmember selection. Moving forward, I’m keen to explore how these advanced classification techniques could be combined with time-series analysis to monitor gradual urban changes and potentially integrate with policy frameworks for sustainable urban development.</p>
+</section>
+<section id="references" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="references"><span class="header-section-number">8.3</span> References</h2>
+<p>Mboga, N. et al.&nbsp;(2017) Detection of informal settlements from VHR images using convolutional neural networks. Remote sensing (Basel, Switzerland). [Online] 9 (11), 1106-.</p>
+<p>Deng, C. &amp; Wu, C. (2013) Examining the impacts of urban biophysical compositions on surface urban heat island: A spectral unmixing and thermal mixing approach. Remote sensing of environment. [Online] 131262–274.</p>
+<p>Georganos, S. et al.&nbsp;(2018) Very High Resolution Object-Based Land Use-Land Cover Urban Classification Using Extreme Gradient Boosting. IEEE geoscience and remote sensing letters. [Online] 15 (4), 607–611.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -636,8 +699,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./wk9.html" class="pagination-link" aria-label="wk6">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">wk6</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./wk9.html" class="pagination-link" aria-label="SAR and Temperature">
+        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SAR and Temperature</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

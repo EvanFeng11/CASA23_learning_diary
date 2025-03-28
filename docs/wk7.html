@@ -133,13 +133,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk4.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">wk4</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Remote Sensing for Urban Policy</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk6.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Google Earth Engine (GEE)</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -151,13 +151,13 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk8.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classification II</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./wk9.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">wk6</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">SAR and Temperature</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -183,8 +183,19 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#learning-diary-week-6---classification-i" id="toc-learning-diary-week-6---classification-i" class="nav-link active" data-scroll-target="#learning-diary-week-6---classification-i"><span class="header-section-number">8</span> Learning Diary: Week 6 - Classification I</a>
+  <ul class="collapse">
+  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary"><span class="header-section-number">8.1</span> Summary</a></li>
+  <li><a href="#applications" id="toc-applications" class="nav-link" data-scroll-target="#applications"><span class="header-section-number">8.2</span> Applications</a></li>
+  <li><a href="#reflection" id="toc-reflection" class="nav-link" data-scroll-target="#reflection"><span class="header-section-number">8.3</span> Reflection</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -208,8 +219,42 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="learning-diary-week-6---classification-i" class="level1" data-number="8">
+<h1 data-number="8"><span class="header-section-number">8</span> Learning Diary: Week 6 - Classification I</h1>
+<section id="summary" class="level2" data-number="8.1">
+<h2 data-number="8.1" class="anchored" data-anchor-id="summary"><span class="header-section-number">8.1</span> Summary</h2>
+<p>This week I explored classification techniques for remote sensing data, diving into both supervised and unsupervised methods. Having previously studied machine learning fundamentals, I was excited to see how these concepts apply specifically to satellite imagery analysis. I found classification to be a critical step in processing remotely sensed imagery, as it allows pixels to be grouped based on their spectral characteristics to identify land cover types. The lecture introduced various classification algorithms including linear regression, Classification and Regression Trees (CART), Random Forests, and Support Vector Machines (SVM). I was particularly interested in how SVMs work by finding optimal hyperplanes to separate classes with maximum margins, while Random Forests overcome the overfitting limitations of individual decision trees through creating multiple trees and aggregating their predictions. During the practical session, I implemented these techniques in Google Earth Engine, applying classification algorithms to Sentinel imagery to identify different land cover types. I learned about the concept of “black box” algorithms, where the decision-making process remains opaque, making it difficult to interpret why certain pixels are assigned to specific classes. I also realized that supervised classification requires high-quality training data, which can be resource-intensive to create but yields more accurate and reliable results compared to unsupervised methods.</p>
+</section>
+<section id="applications" class="level2" data-number="8.2">
+<h2 data-number="8.2" class="anchored" data-anchor-id="applications"><span class="header-section-number">8.2</span> Applications</h2>
+<p>Recent literature demonstrates diverse applications of classification techniques in remote sensing. Maxwell et al.&nbsp;(2018) conducted a comprehensive review of machine-learning classification methods in remote sensing, evaluating algorithms such as Random Forest, Support Vector Machine, and k-Nearest Neighbor. Their findings highlighted that Random Forest consistently outperformed other classifiers, achieving overall accuracies exceeding 90% while requiring less computational resources. The study emphasized the advantages of ensemble methods like Random Forest in effectively handling the high dimensionality of remotely sensed data, compared to traditional parametric classifiers.</p>
+<p>In a related study, Zhang et al.&nbsp;(2019) explored the application of deep learning techniques, specifically Convolutional Neural Networks (CNNs), for joint land cover and land use classification using high-resolution satellite imagery. Their approach achieved classification accuracies ranging from 87% to 92% across different urban environments. The research demonstrated the ability of CNNs to automatically extract hierarchical features from imagery, reducing the reliance on manual feature engineering required by traditional methods. These advancements underscore the growing importance of machine learning and deep learning in remote sensing applications. <img src="qimages/62.png" class="img-fluid quarto-figure quarto-figure-center" alt="The general workflow of the land cover (LC) and land use (LU) Joint Deep Learning (JDL)"></p>
+<p>In agricultural applications, Belgiu and Csillik (2018) applied both pixel-based and object-based classification methods to map crop types using multi-temporal Sentinel-2 imagery. Their approach incorporated phenological information through time series analysis, achieving a 15-20% improvement in classification accuracy compared to single-date imagery classification. The authors highlighted how object-based approaches reduced the “salt-and-pepper” effect common in pixel-based classifications, producing more coherent agricultural field boundaries.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="qimages/63.jpg" class="img-fluid figure-img"></p>
+<figcaption>The workflow of pixel-based and object-based TWDTW and RF approaches</figcaption>
+</figure>
+</div>
+<p>For environmental monitoring, Mahdianpari et al.&nbsp;(2019) utilized Random Forest and SVM classifiers to map wetland types using multi-source remote sensing data, including Sentinel-1 radar and Sentinel-2 optical imagery. Their research demonstrated that integrating different data sources significantly improved classification accuracy, from 71% with optical data alone to 94% with the combined dataset. This multi-source approach proved particularly valuable in areas where cloud cover frequently limits the availability of optical imagery, showcasing the robustness of modern classification techniques in addressing complex environmental mapping challenges.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="qimages/6.4.jpg" class="img-fluid figure-img"></p>
+<figcaption>The final land cover map for the Island of Newfoundland obtained from the object-based Random Forest (RF) classification using the multi-year summer SAR/optical composite. An overall accuracy of 88.37% and a Kappa coefficient of 0.85 were achieved. A total of six insets and their corresponding optical images (i.e., Sentinel-2) were also illustrated to appreciate some of the classification details. Please also see Supplementary Materials for details of the final classification map.</figcaption>
+</figure>
+</div>
+</section>
+<section id="reflection" class="level2" data-number="8.3">
+<h2 data-number="8.3" class="anchored" data-anchor-id="reflection"><span class="header-section-number">8.3</span> Reflection</h2>
+<p>As I reflect on this week’s content, I’m struck by how classification techniques represent the cornerstone of extracting meaningful information from remote sensing data. I’ve realized that choosing appropriate methods requires careful consideration of data characteristics, research objectives, and available resources. The trade-offs between supervised and unsupervised approaches mirror challenges I’ve encountered in other data science contexts: balancing accuracy with interpretability, and weighing the costs of data preparation against the benefits of more precise results. What I found particularly intriguing was how these seemingly technical choices have profound real-world implications. I immediately thought about applications in China’s “red line” policy for arable land protection, where accurate classification of agricultural land is crucial for monitoring compliance with the national 1.8 billion mu (mu, Chinese unit of land measurement that is commonly 666.7 square metres，120 million hectares) minimum farmland preservation target. These classification techniques could help authorities track land use changes and enforce this critical food security policy more effectively. Looking forward, I believe the evolution of explainable AI approaches could address the “black box” limitations of current classification methods. As I consider my future research interests in urban sustainability, I’m excited about the ability to accurately classify urban land cover and monitor changes over time, though I recognize I’ll need to complement these technical approaches with ground-truth validation and contextual understanding of the areas being studied.</p>
+<p>##References Maxwell, A. E. et al.&nbsp;(2018) Implementation of machine-learning classification in remote sensing: an applied review. International journal of remote sensing. [Online] 39 (9), 2784–2817.</p>
+<p>Belgiu, M. &amp; Csillik, O. (2018) Sentinel-2 cropland mapping using pixel-based and object-based time-weighted dynamic time warping analysis. Remote sensing of environment. [Online] 204509–523.</p>
+<p>Zhang, C. et al.&nbsp;(2019) Joint Deep Learning for land cover and land use classification. Remote sensing of environment. [Online] 221173–187.</p>
+<p>Mahdianpari, M. et al.&nbsp;(2019) The first wetland inventory map of newfoundland at a spatial resolution of 10 m using sentinel-1 and sentinel-2 data on the Google Earth Engine cloud computing platform. Remote sensing (Basel, Switzerland). [Online] 11 (1), 43-.</p>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -631,13 +676,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./wk6.html" class="pagination-link" aria-label="wk6">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">wk6</span></span>
+      <a href="./wk6.html" class="pagination-link" aria-label="Google Earth Engine (GEE)">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Google Earth Engine (GEE)</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./wk8.html" class="pagination-link" aria-label="wk6">
-        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">wk6</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./wk8.html" class="pagination-link" aria-label="Classification II">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Classification II</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
