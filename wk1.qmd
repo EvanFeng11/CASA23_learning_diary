@@ -12,13 +12,16 @@ Remote sensing is used in many fields, such as environmental monitoring, urban p
 
 High spectral resolution data is useful for studying vegetation and land cover. Spectral resolution helps identify different features based on how they reflect light. For example, vegetation indices like NDVI use differences between red and near-infrared wavelengths to measure plant health and density. This method is helpful for tracking how ecosystems recover in areas damaged by mining. Hao[-@hao2020] used NDVI to monitor how vegetation grew back over time. They found that spectral data was a reliable way to measure how successful land restoration efforts were.
 
-![](qimages/图片1.png){fig-align="center" width="80%"}
+![Example of detected land use type change.](qimages/图片1.jpg){fig-align="center" width="60%"}
 
 High radiometric resolution plays a key role in detecting small environmental changes. It has been widely used in water quality studies to spot issues like algal blooms or sediment buildup in water systems. This level of radiometric sensitivity allows researchers to detect tiny changes in brightness that might otherwise go unnoticed. These insights are crucial for guiding environmental protection efforts[@tianshiProgressProspectsHyperspectral2021].
 
-![](qimages/图片2.png){fig-align="center" width="80%"}
+![Distinguishing result of cyanobacteria bloom and aquatic plants based on HICO images](qimages/图片2.png){fig-align="center" width="60%"}
 
-Temporal and spatial resolutions are also important in many practical applications of remote sensing. Temporal resolution is essential for observing dynamic events, such as natural disasters or seasonal changes. For example, MODIS, which offers daily global coverage, has been used to track wildfires and droughts in real time, providing critical information for emergency response [@giglio2016]. Meanwhile, spatial resolution determines how much detail an image can show. Satellites like Landsat, which provide medium spatial resolution, have been key in studying long-term changes like urban growth and deforestation. For instance, Hansen[-@hansen2013] used Landsat data to map global forest loss and gain over decades, showing how spatial resolution helps detect gradual environmental changes. ![](qimages/图片3.png)\
+Temporal and spatial resolutions are also important in many practical applications of remote sensing. Temporal resolution is essential for observing dynamic events, such as natural disasters or seasonal changes. For example, MODIS, which offers daily global coverage, has been used to track wildfires and droughts in real time, providing critical information for emergency response [@giglio2016]. Meanwhile, spatial resolution determines how much detail an image can show. Satellites like Landsat, which provide medium spatial resolution, have been key in studying long-term changes like urban growth and deforestation. For instance, Hansen[-@hansen2013] used Landsat data to map global forest loss and gain over decades, showing how spatial resolution helps detect gradual environmental changes.
+
+![A) Tree cover, (В) forest loss, and (0 forest gain. A color composite of tree cover in green, forest loss in red, forest gain in blue, and forest loss and gain in magenta is shown in (D), with loss and gain enhanced for improved visualization. All map layers have been resampled for display purposes from the 30-m observation scale to a 0.05° geographic grid.](qimages/图片3.png)
+
 
 ## Reflection
 
