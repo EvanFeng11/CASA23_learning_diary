@@ -16,8 +16,8 @@ book:
     - wk7.qmd
     - wk8.qmd
     - wk9.qmd    
-    
-    - references.qmd
+    - references.qmd    
+   
 
 bibliography: references.bib
 
